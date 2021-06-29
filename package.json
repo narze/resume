@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "*",
+    "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/svelte": "^3.0.3",
     "@types/jest": "^26.0.21",
     "autoprefixer": "^10.2.5",
