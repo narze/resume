@@ -21,10 +21,10 @@
       url: "https://eventpop.me",
       years: ["2015", "Current"],
       details: [
-        "Designed & developed several core services for EventPop website (Ticketing, Payment, Billing, Reporting, APIs, etc.) using Ruby on Rails.",
-        "Maintain server operations, pioneered DevOps practices in the team.",
-        "Integrated 3rd-party services : Kerry Express, DHL, Queue-It.",
-        "Integrated payment service providers : Omise, ThaiEPay, 123 by 2C2P, SCB-Easy, K-PayPlus, K-PaymentGateway.",
+        "Designed & developed several core services for EventPop website (Ticketing, Payment, Billing, Reporting, APIs, etc.) using Ruby on Rails",
+        "Maintain server operations, pioneered DevOps practices in the team",
+        "Integrated 3rd-party services : Kerry Express, DHL, Queue-It",
+        "Integrated payment service providers : Omise, ThaiEPay, 123 by 2C2P, SCB-Easy, K-PayPlus, K-PaymentGateway",
       ],
     },
     {
@@ -33,10 +33,10 @@
       url: "https://fb.me/makerzoo",
       years: ["2014", "2016"],
       details: [
-        "Pioneered Maker Movement in Thailand by opening first of the Makerspaces in Bangkok.",
-        "Hosted maker workshops eg. 3D-modeling, 3D-printing, Arduino, IoT, etc.",
-        "Developed hardware-related products for clients and startups.",
-        "Provided 3D-printing service & consultant.",
+        "Pioneered Maker Movement in Thailand by opening first of the Makerspaces in Bangkok",
+        "Hosted maker workshops eg. 3D-modeling, 3D-printing, Arduino, IoT, etc",
+        "Developed hardware-related products for clients and startups",
+        "Provided 3D-printing service & consultant",
       ],
     },
     {
@@ -46,7 +46,7 @@
       years: ["2015", "2016"],
       details: [
         "Developed internet connected Smart Lockers System using web technologies (Node.js, React.js) on embedded systems (Ubuntu Linux, Arduino, Raspberry Pi)",
-        "Developed Node.js library to connect with Nayax to receive cashless payment on vending machines, and also supports Thai Baht cash payment.",
+        "Developed Node.js library to connect with Nayax to receive cashless payment on vending machines, and also supports Thai Baht cash payment",
       ],
     },
     {
@@ -55,9 +55,9 @@
       url: "https://www.facebook.com/figabyte",
       years: ["2011", "2014"],
       details: [
-        "Developed several Facebook web apps with CodeIgniter, using Facebook API.",
-        "Developed web platform using Ruby on Rails 3 & 4.",
-        "Made iOS apps for clients using PhoneGap and RubyMotion.",
+        "Developed several Facebook web apps with CodeIgniter, using Facebook API",
+        "Developed web platform using Ruby on Rails 3 & 4",
+        "Made iOS apps for clients using PhoneGap and RubyMotion",
       ],
     },
     {
@@ -66,8 +66,8 @@
       url: "https://wongnai.com",
       years: ["2010"],
       details: [
-        "Developed a small part of website using Java with Spring MVC Framework built with Apache Maven.",
-        "Learned TDD practice & making early-stage startup.",
+        "Developed a small part of website using Java with Spring MVC Framework built with Apache Maven",
+        "Learned TDD practice & making early-stage startup",
       ],
     },
   ]
