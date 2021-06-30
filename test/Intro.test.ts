@@ -23,7 +23,7 @@ describe("Intro Component", () => {
     expect(getByText("John Doe")).toBeInTheDocument()
     expect(getByText("+66 123 4567")).toBeInTheDocument()
     expect(getByText("john_doe@example.com")).toBeInTheDocument()
-    expect(getByText("github.com/john_doe_gh)")).toBeInTheDocument()
+    expect(getByText("github.com/john_doe_gh")).toBeInTheDocument()
     expect(getByText("Linkedin")).toBeInTheDocument()
   })
 })
