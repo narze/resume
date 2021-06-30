@@ -7,14 +7,14 @@
 </script>
 
 <div class="work-experience">
-  <div class="flex font-bold mb-2">
+  <div class="flex font-bold mb-2 print:mb-1">
     <div class="flex-1 text-left">{position}</div>
     <div class="flex-0">
       <a href={url} target="_blank" rel="noreferrer">{company}</a>
     </div>
     <div class="flex-1 text-right">{years.join("-")}</div>
   </div>
-  <ul class="text-left list-disc pl-8">
+  <ul class="text-left list-disc pl-8 print:pl-6">
     {#each details as detail}
       <li>
         {detail}
@@ -33,12 +33,8 @@
   }
 
   @media print {
-    ul {
-      @apply pl-6;
-    }
-
     .work-experience {
-      @apply my-2;
+      @apply my-1;
     }
   }
 </style>
