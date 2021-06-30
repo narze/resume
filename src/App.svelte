@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { onMount } from "svelte"
+
   import Tailwind from "./Tailwind.svelte"
   import Intro from "./Intro.svelte"
   import Work from "./Work.svelte"
@@ -115,7 +117,46 @@
 
   const fullVersionLink = "https://manassarn-resume.vercel.app"
   const sourceLink = "https://github.com/narze/resume"
+
+  let kofiReady = false
+  let mounted = false
+
+  onMount(() => {
+    // The payment-form is ready.
+    mounted = true
+    if (kofiReady) {
+      loadKofiWidget()
+    }
+  })
+
+  function kofiLoaded() {
+    // The external Kofi javascript is ready.
+    kofiReady = true
+    if (mounted) {
+      loadKofiWidget()
+    }
+  }
+
+  function loadKofiWidget() {
+    window.kofiWidgetOverlay!.draw(
+      "narze",
+      {
+        type: "floating-chat",
+        "floating-chat.donateButton.text": "Support me",
+        "floating-chat.donateButton.background-color": "#00b9fe",
+        "floating-chat.donateButton.text-color": "#fff",
+      },
+      "kofiContainer"
+    )
+  }
 </script>
+
+<svelte:head>
+  <script
+    type="text/javascript"
+    src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"
+    on:load={kofiLoaded}></script>
+</svelte:head>
 
 <Tailwind />
 
@@ -249,6 +290,8 @@
     >
     or <a href={sourceLink} target="_blank" rel="noopener">source</a>)
   </footer>
+
+  <div id="kofiContainer" />
 </main>
 
 <style>
@@ -278,6 +321,10 @@
   }
 
   @media print {
+    #kofiContainer {
+      display: none;
+    }
+
     * {
       @apply text-xs;
     }
