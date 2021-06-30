@@ -31,4 +31,18 @@
   a {
     text-decoration: underline;
   }
+
+  @media print {
+    * {
+      font-size: 95%;
+    }
+
+    ul {
+      @apply pl-6;
+    }
+
+    .work-experience {
+      @apply my-2;
+    }
+  }
 </style>

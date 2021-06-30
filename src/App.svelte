@@ -67,7 +67,7 @@
       years: ["2010"],
       details: [
         "Developed a small part of website using Java with Spring MVC Framework built with Apache Maven.",
-        "Learned TDD practice & making early startup product.",
+        "Learned TDD practice & making early-stage startup.",
       ],
     },
   ]
@@ -181,7 +181,19 @@
 
   @media print {
     * {
-      font-size: 90%;
+      font-size: 95%;
+    }
+
+    ul {
+      @apply pl-6;
+    }
+
+    section {
+      @apply my-2;
+    }
+
+    section hr {
+      @apply mt-0 mb-1;
     }
 
     body,
