@@ -78,16 +78,29 @@
 
 <Tailwind />
 
-<main class="text-center p-4 mx-0">
+<header
+  class="web-only text-center p-4 sm:p-6 bg-green-400 text-white w-screen"
+>
+  <h1 class="text-4xl">Resumette</h1>
+  <p>
+    Printer-friendly standard résumé, any HTML tags with <code>web-only</code> CSS
+    class will be hidden on print.
+  </p>
+  (<a href={sourceLink} target="_blank" rel="noopener">Source</a>)
+</header>
+
+<main class="text-center p-4 m-0 md:m-8">
   <Intro id="intro" {...introData} />
 
   <section>
-    <h2 class="text-2xl uppercase text-left">Technologies and languages</h2>
+    <h2 class="text-2xl print:text-4xl uppercase text-left">
+      Technologies and languages
+    </h2>
     <hr />
     <p>(TBA)</p>
   </section>
   <section>
-    <h2 class="text-2xl uppercase text-left">Education</h2>
+    <h2 class="text-2xl print:text-4xl uppercase text-left">Education</h2>
     <hr />
 
     <ul class="text-left list-disc pl-8">
@@ -98,7 +111,7 @@
     </ul>
   </section>
   <section>
-    <h2 class="text-2xl uppercase text-left">Work Experience</h2>
+    <h2 class="text-2xl print:text-4xl uppercase text-left">Work Experience</h2>
     <hr />
 
     {#each workExperiences as exp}
@@ -106,13 +119,13 @@
     {/each}
   </section>
   <section>
-    <h2 class="text-2xl uppercase text-left">Projects</h2>
+    <h2 class="text-2xl print:text-4xl uppercase text-left">Projects</h2>
     <hr />
 
     <p>(TBA)</p>
   </section>
   <section>
-    <h2 class="text-2xl uppercase text-left">Interests</h2>
+    <h2 class="text-2xl print:text-4xl uppercase text-left">Interests</h2>
     <hr />
 
     <p>(TBA)</p>
@@ -145,7 +158,7 @@
     the officially supported framework, also powered by Vite!
   </p>
   -->
-  <footer>
+  <footer class="print-only">
     (See <a href={fullVersionLink} target="_blank" rel="noopener"
       >full version</a
     >
@@ -154,14 +167,6 @@
 </main>
 
 <style>
-  :root {
-    --svelte-rgb: 255, 62, 0;
-  }
-
-  h1 {
-    color: rgb(var(--svelte-rgb));
-  }
-
   a {
     text-decoration: underline;
   }
@@ -179,9 +184,25 @@
     border-color: darkgrey;
   }
 
+  .print-only {
+    display: none;
+  }
+
+  .web-only {
+    display: inherit;
+  }
+
   @media print {
     * {
-      font-size: 95%;
+      @apply text-xs;
+    }
+
+    .print-only {
+      display: inherit;
+    }
+
+    .web-only {
+      display: none;
     }
 
     ul {
@@ -198,7 +219,7 @@
 
     body,
     main {
-      margin: -1rem 0;
+      margin: 0 0;
       padding: 0;
     }
   }

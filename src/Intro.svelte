@@ -8,26 +8,20 @@
   export let location: string = ""
 </script>
 
-<div class="flex">
-  <div
-    class="flex-1 text-left rounded-full py-4 border-2 border-transparent outline-none w-48 tabular-nums focus:border-opacity-100"
-  >
+<div class="flex flex-wrap flex-col sm:flex-row print:flex-row">
+  <div class="flex-1 text-left sm:py-4 w-48">
     <p><a href={`tel:${phone}`}>{phone}</a></p>
     <p><a href={`mailto:${email}`}>{email}</a></p>
     <p>{location}</p>
   </div>
 
-  <h1
-    {id}
-    data-testid={id}
-    class="flex-none text-4xl text-center rounded-full py-4 mx-auto border-2 border-transparent outline-none max-w-md tabular-nums focus:border-opacity-100"
+  <h2
+    class="flex-none order-first sm:order-none print:order-none text-3xl md:text-4xl lg:text-6xl text-center py-4"
   >
     {name}
-  </h1>
+  </h2>
 
-  <div
-    class="flex-1 text-right rounded-full py-4 border-2 border-transparent outline-none w-48 tabular-nums focus:border-opacity-100"
-  >
+  <div class="flex-1 text-left sm:text-right print:text-right sm:py-4 w-48">
     <p>
       <a href={`https://github.com/${github}`} target="_blank" rel="noreferrer"
         >github.com/{github}</a
@@ -49,12 +43,8 @@
   }
 
   @media print {
-    * {
-      font-size: 95%;
-    }
-
-    ul {
-      @apply pl-4;
+    h1 {
+      @apply text-3xl;
     }
   }
 </style>

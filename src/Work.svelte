@@ -33,10 +33,6 @@
   }
 
   @media print {
-    * {
-      font-size: 95%;
-    }
-
     ul {
       @apply pl-6;
     }
