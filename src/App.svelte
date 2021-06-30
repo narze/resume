@@ -21,7 +21,7 @@
       years: ["2015", "Current"],
       details: [
         "Designed, developed and maintained several core services for EventPop website (Ticketing, Payment, Billing, Reporting, APIs, etc.) using Ruby on Rails",
-        "Maintained server operations, deployments, CI-CD. Also pioneered DevOps practices in the team",
+        "Maintained server operations, deployments, CI/CD. Also pioneered DevOps practices in the team",
         "Integrated 3rd-party services : Kerry Express, DHL, Queue-It",
         "Integrated payment service providers : Omise, ThaiEPay, 123 by 2C2P, SCB-Easy, K-PayPlus, K-PaymentGateway",
       ],
@@ -35,6 +35,7 @@
         "Pioneered Maker Movement in Thailand by opening first of the Makerspaces in Bangkok",
         "Hosted maker workshops eg. 3D-modeling, 3D-printing, Arduino, IoT, etc",
         "Developed hardware-related products for clients and startups",
+        "Developed smart door lock system for Hubba, a co-working space in Bangkok",
         "Provided 3D-printing service & consultant",
       ],
     },
@@ -69,6 +70,46 @@
         "Learned TDD practice & making early-stage startup",
       ],
     },
+  ]
+
+  const projects = [
+    {
+      name: "Manoonchai",
+      details:
+        "Modern, productive, and data-driven Thai keyboard layout. A collection of projects built with TypeScript, Elixir, Svelte",
+      url: "github.com/manoonchai",
+    },
+    {
+      name: "9armbot (Contributor)",
+      details:
+        "Twitch & Discord bot for 9arm (Thai technology Youtuber). I helped re-structuring the project using TypeScript & Prisma",
+      url: "github.com/thananon/twitch_tools",
+    },
+    {
+      name: "Dotfiles",
+      details:
+        "macOS dotfiles with setup script for self use, tested on Apple Silicon Macs (Zsh, Zinit, Dotbot, GNU Make, etc.)",
+      url: "github.com/narze/dotfiles",
+    },
+    {
+      name: "#100DaysOfCode",
+      details:
+        "My take on practicing modern frontend development by building small projects in 100 days",
+      url: "100daysofcode-narze.vercel.app",
+    },
+    {
+      name: "Baht.rb",
+      details: "Ruby gem to convert number to Thai Baht format",
+      url: "rubygems.org/gems/baht",
+    },
+  ]
+
+  const interests = [
+    "Areas : Coding, Productivity & Life-hacks, Mechanical Keyboards",
+    "Typing : 120+ words per minute (Colemak Mod-DH layout)",
+    "Games : Music games, FPS, MOBA, Puzzle",
+    "Music : EDM, Rock, Japanese",
+    "Pets : I have 3 dogs",
   ]
 
   const fullVersionLink = "https://manassarn-resume.vercel.app"
@@ -114,14 +155,14 @@
         <span class="w-28 inline-block">Tools:</span>
         <span
           >Git, Terraform, Docker, Kubernetes, Helm, ArgoCD, FluxCD, Robot
-          Framework, Selenium</span
+          Framework, Selenium, Zsh</span
         >
       </li>
       <li>
         <span class="w-28 inline-block">Other:</span>
         <span
-          >AWS, GCP, Firebase, DigitalOcean, Cloud66, Github Actions, CircleCI,
-          CloudFlare</span
+          >AWS, GCP, Firebase, Vercel, DigitalOcean, Cloud66, Github Actions,
+          CircleCI, CloudFlare</span
         >
       </li>
     </ul>
@@ -149,13 +190,29 @@
     <h2 class="text-2xl print:text-4xl uppercase text-left">Projects</h2>
     <hr />
 
-    <p>(TBA)</p>
+    <ul class="text-left list-disc pl-8">
+      {#each projects as project}
+        <li>
+          <strong>{project.name}</strong>
+          - {project.details}
+          <a href="https://{project.url}" target="_blank" rel="noreferrer"
+            ><strong>{project.url}</strong></a
+          >
+        </li>
+      {/each}
+    </ul>
   </section>
   <section>
     <h2 class="text-2xl print:text-4xl uppercase text-left">Interests</h2>
     <hr />
 
-    <p>(TBA)</p>
+    <ul class="text-left list-disc pl-8">
+      {#each interests as interest}
+        <li>
+          {interest}
+        </li>
+      {/each}
+    </ul>
   </section>
 
   <!--
