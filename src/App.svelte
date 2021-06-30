@@ -1,6 +1,4 @@
 <script lang="ts">
-  import logo from "./assets/svelte.png"
-  import Counter from "./lib/Counter.svelte"
   import Tailwind from "./Tailwind.svelte"
   import Intro from "./Intro.svelte"
   import Work from "./Work.svelte"
@@ -12,6 +10,7 @@
     github: "narze",
     linkedin: "manassarnmanoonchai",
     location: "Bangkok, Thailand",
+    website: "monosor.com",
   }
 
   const workExperiences = [
