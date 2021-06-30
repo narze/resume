@@ -20,14 +20,14 @@
       url: "https://eventpop.me",
       years: ["2015", "Current"],
       details: [
-        "Designed & developed several core services for EventPop website (Ticketing, Payment, Billing, Reporting, APIs, etc.) using Ruby on Rails",
-        "Maintain server operations, pioneered DevOps practices in the team",
+        "Designed, developed and maintained several core services for EventPop website (Ticketing, Payment, Billing, Reporting, APIs, etc.) using Ruby on Rails",
+        "Maintained server operations, deployments, CI-CD. Also pioneered DevOps practices in the team",
         "Integrated 3rd-party services : Kerry Express, DHL, Queue-It",
         "Integrated payment service providers : Omise, ThaiEPay, 123 by 2C2P, SCB-Easy, K-PayPlus, K-PaymentGateway",
       ],
     },
     {
-      position: "Co-founder",
+      position: "Maker, Co-founder",
       company: "Maker Zoo",
       url: "https://fb.me/makerzoo",
       years: ["2014", "2016"],
@@ -45,7 +45,7 @@
       years: ["2015", "2016"],
       details: [
         "Developed internet connected Smart Lockers System using web technologies (Node.js, React.js) on embedded systems (Ubuntu Linux, Arduino, Raspberry Pi)",
-        "Developed Node.js library to connect with Nayax to receive cashless payment on vending machines, and also supports Thai Baht cash payment",
+        "Developed private Node.js library to connect with Nayax via serial port to receive cashless payment on vending machines, and also supported Thai Baht cash payment",
       ],
     },
     {
@@ -89,14 +89,42 @@
 </header>
 
 <main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
-  <Intro id="intro" {...introData} />
+  <Intro {...introData} />
 
   <section>
     <h2 class="text-2xl print:text-4xl uppercase text-left">
-      Technologies and languages
+      Technologies and Languages
     </h2>
     <hr />
-    <p>(TBA)</p>
+    <ul class="text-left list-disc pl-8">
+      <li>
+        <span class="w-28 inline-block">Languages:</span>
+        <span
+          >Ruby, JavaScript, Node.js (strong). TypeScript, SQL (proficient).</span
+        >
+      </li>
+      <li>
+        <span class="w-28 inline-block">Frameworks:</span>
+        <span
+          >Ruby on Rails, ReactJS, NextJS, NestJS, Svelte, TailwindCSS,
+          Bootstrap</span
+        >
+      </li>
+      <li>
+        <span class="w-28 inline-block">Tools:</span>
+        <span
+          >Git, Terraform, Docker, Kubernetes, Helm, ArgoCD, FluxCD, Robot
+          Framework, Selenium</span
+        >
+      </li>
+      <li>
+        <span class="w-28 inline-block">Other:</span>
+        <span
+          >AWS, GCP, Firebase, DigitalOcean, Cloud66, Github Actions, CircleCI,
+          CloudFlare</span
+        >
+      </li>
+    </ul>
   </section>
   <section>
     <h2 class="text-2xl print:text-4xl uppercase text-left">Education</h2>
