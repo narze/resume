@@ -11,6 +11,7 @@ describe("Intro Component", () => {
   test("it renders the info from attributes", async () => {
     const { getByText } = render(Intro, {
       name: "John Doe",
+      nickname: "Johnny",
       phone: "+66 123 4567",
       email: "john_doe@example.com",
       github: "john_doe_gh",
@@ -19,6 +20,7 @@ describe("Intro Component", () => {
     })
 
     expect(getByText("John Doe")).toBeInTheDocument()
+    expect(getByText("(Johnny)")).toBeInTheDocument()
     expect(getByText("+66 123 4567")).toBeInTheDocument()
     expect(getByText("john_doe@example.com")).toBeInTheDocument()
     expect(getByText("github.com/john_doe_gh")).toBeInTheDocument()

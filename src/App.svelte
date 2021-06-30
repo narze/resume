@@ -5,6 +5,7 @@
 
   const introData = {
     name: "Manassarn Manoonchai",
+    nickname: "Noom",
     phone: "+66863949474",
     email: "manassarn@gmail.com",
     github: "narze",
