@@ -291,7 +291,7 @@
     or <a href={sourceLink} target="_blank" rel="noopener">source</a>)
   </footer>
 
-  <div id="kofiContainer" />
+  <div id="kofiContainer" class="web-only" />
 </main>
 
 <style>
@@ -321,10 +321,6 @@
   }
 
   @media print {
-    #kofiContainer {
-      display: none;
-    }
-
     * {
       @apply text-xs;
     }
