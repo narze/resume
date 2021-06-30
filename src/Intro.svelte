@@ -16,7 +16,7 @@
   </div>
 
   <h2
-    class="flex-none order-first sm:order-none print:order-none text-3xl md:text-4xl lg:text-6xl text-center py-4"
+    class="flex-none order-first sm:order-none print:order-none text-3xl md:text-4xl lg:text-6xl text-center p-4"
   >
     {name}
   </h2>

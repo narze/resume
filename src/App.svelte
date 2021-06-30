@@ -89,7 +89,7 @@
   (<a href={sourceLink} target="_blank" rel="noopener">Source</a>)
 </header>
 
-<main class="text-center p-4 m-0 md:m-8">
+<main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
   <Intro id="intro" {...introData} />
 
   <section>
