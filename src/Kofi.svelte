@@ -44,19 +44,3 @@
 {#if name}
   <div id="kofiContainer" class="web-only" />
 {/if}
-
-<style>
-  .work-experience {
-    @apply my-4;
-  }
-
-  a {
-    text-decoration: underline;
-  }
-
-  @media print {
-    .work-experience {
-      @apply my-1;
-    }
-  }
-</style>
