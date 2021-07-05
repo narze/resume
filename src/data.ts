@@ -147,5 +147,6 @@ export const interests = [
   "Typing : 120+ words per minute (Colemak Mod-DH layout)",
   "Games : Music games, FPS, MOBA, Puzzle",
   "Music : EDM, Rock, Japanese",
+  "Remote working is a OK. I extensively use self time tracking app for all my works.",
   "Pets : I have 3 dogs",
 ]
