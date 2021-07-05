@@ -13,6 +13,7 @@
     sourceLink,
     technologies,
     workExperiences,
+    ogImageUrl,
   } from "./data"
 
   let editMode = false
@@ -135,6 +136,29 @@
     or <a href={sourceLink} target="_blank" rel="noopener">source</a>)
   </footer>
 </main>
+
+<svelte:head>
+  <title>Resumette</title>
+
+  <meta name="title" content="Resumette" />
+  <meta
+    name="description"
+    content="Interactive & printable résumé with tailored skills fitted in single letter page."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Resumette" />
+  <meta
+    property="og:description"
+    content="Interactive & printable résumé with tailored skills fitted in single letter page."
+  />
+  <meta property="og:image" content={ogImageUrl} />
+
+  <meta name="twitter:title" content="Resumette" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content={ogImageUrl} />
+</svelte:head>
 
 <style>
   main {
