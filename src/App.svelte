@@ -3,6 +3,7 @@
   import Intro from "./Intro.svelte"
   import Work from "./Work.svelte"
   import Kofi from "./Kofi.svelte"
+  import HideToggle from "./HideToggle.svelte"
   import {
     educations,
     fullVersionLink,
@@ -13,6 +14,12 @@
     technologies,
     workExperiences,
   } from "./data"
+
+  let editMode = false
+
+  function toggleMode() {
+    editMode = !editMode
+  }
 </script>
 
 <!-- Remove this is you does not want Kofi widget on your site -->
@@ -30,13 +37,23 @@
     Printer-friendly standard résumé, any HTML tags with <code>web-only</code> CSS
     class will be hidden on print.
   </p>
+  <p>
+    You can toggle <button on:click={toggleMode} class="underline text-lg"
+      >[Edit Mode]</button
+    > to hide some sections before printing.
+  </p>
   (<a href={sourceLink} target="_blank" rel="noopener">Source</a>)
 </header>
 
-<main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
+<main
+  class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl {editMode
+    ? 'edit-mode'
+    : 'display-mode'}"
+>
   <Intro {...introData} />
 
   <section>
+    <HideToggle />
     <h2 class="text-2xl print:text-4xl uppercase text-left">
       Technologies and Languages
     </h2>
@@ -44,6 +61,7 @@
     <ul class="text-left list-disc pl-8">
       {#each technologies as tech}
         <li>
+          <HideToggle />
           <span class="w-28 inline-block">{tech.section}</span>
           <span>{tech.details}</span>
         </li>
@@ -57,6 +75,7 @@
     <ul class="text-left list-disc pl-8">
       {#each educations as edu}
         <li>
+          <HideToggle />
           <strong>{edu.head}</strong>, {edu.details}
         </li>
       {/each}
@@ -77,6 +96,7 @@
     <ul class="text-left list-disc pl-8">
       {#each projects as project}
         <li>
+          <HideToggle />
           <strong>{project.name}</strong>
           - {project.details}
           <a href="https://{project.url}" target="_blank" rel="noreferrer"
@@ -93,6 +113,7 @@
     <ul class="text-left list-disc pl-8">
       {#each interests as interest}
         <li>
+          <HideToggle />
           {interest}
         </li>
       {/each}
@@ -108,6 +129,10 @@
 </main>
 
 <style>
+  main {
+    overflow-x: hidden;
+  }
+
   a {
     text-decoration: underline;
   }
@@ -125,12 +150,12 @@
     border-color: darkgrey;
   }
 
-  .print-only {
+  :global(.print-only) {
     display: none;
   }
 
-  .web-only {
-    display: inherit;
+  :global(main.display-mode .hide-toggle) {
+    display: none;
   }
 
   @media print {
@@ -138,11 +163,11 @@
       @apply text-xs;
     }
 
-    .print-only {
+    :global(.print-only) {
       display: inherit;
     }
 
-    .web-only {
+    :global(.web-only) {
       display: none;
     }
 
@@ -158,7 +183,6 @@
       @apply mt-0 mb-1;
     }
 
-    body,
     main {
       margin: 0 0;
       padding: 0;
