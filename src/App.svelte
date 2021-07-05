@@ -23,9 +23,10 @@
       url: "https://eventpop.me",
       years: ["2015", "Current"],
       details: [
-        "Designed, developed and maintained several core services for EventPop website (Ticketing, Payment, Billing, Reporting, APIs, etc.) using Ruby on Rails",
-        "Maintained server operations, deployments, CI/CD. Also pioneered DevOps practices in the team",
-        "Integrated 3rd-party services : Kerry Express, DHL, Queue-It",
+        "Designed, developed and maintained several core services for EventPop website (Ticketing, Seating, Payment, Fee Calculation, Line Item, Billing, Reporting, APIs, etc.) using Ruby on Rails",
+        "Researched & applied improvements for development workflow. Testing libraries : RSpec, Guard, VCR, Capybara, Selenium, Cucumber, Timecop. CI/CD : CircleCI, Github Actions, Drone CI, ArgoCD, FluxCD, Terraform",
+        "Maintained server operations, deployments, containerization with Docker & Kubernetes, CI/CD. Also pioneered DevOps practices in the team",
+        "Integrated 3rd-party services : Kerry Express, DHL, Queue-It, Refund Protect, Skootar, Tanita Body Scale",
         "Integrated payment service providers : Omise, ThaiEPay, 123 by 2C2P, SCB-Easy, K-PayPlus, K-PaymentGateway",
       ],
     },
