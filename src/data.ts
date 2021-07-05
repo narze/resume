@@ -134,6 +134,12 @@ export const projects = [
     details: "Ruby gem to convert number to Thai Baht format",
     url: "rubygems.org/gems/baht",
   },
+  {
+    name: "Resumette",
+    details:
+      "Interactive & printable résumé with tailored skills fitted in single letter page (This page!)",
+    url: "manassarn-resume.vercel.app",
+  },
 ]
 
 export const interests = [
