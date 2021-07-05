@@ -138,7 +138,7 @@
   }
 
   function loadKofiWidget() {
-    window.kofiWidgetOverlay!.draw(
+    window.kofiWidgetOverlay.draw(
       "narze",
       {
         type: "floating-chat",
