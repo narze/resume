@@ -76,7 +76,9 @@
       {/each}
     </ul>
   </section>
+
   <section>
+    <HideToggle />
     <h2 class="text-2xl print:text-4xl uppercase text-left">Education</h2>
     <hr />
 
@@ -89,7 +91,9 @@
       {/each}
     </ul>
   </section>
+
   <section>
+    <HideToggle />
     <h2 class="text-2xl print:text-4xl uppercase text-left">Work Experience</h2>
     <hr />
 
@@ -97,7 +101,9 @@
       <Work {...exp} />
     {/each}
   </section>
+
   <section>
+    <HideToggle />
     <h2 class="text-2xl print:text-4xl uppercase text-left">Projects</h2>
     <hr />
 
@@ -114,7 +120,9 @@
       {/each}
     </ul>
   </section>
+
   <section>
+    <HideToggle />
     <h2 class="text-2xl print:text-4xl uppercase text-left">Interests</h2>
     <hr />
 
