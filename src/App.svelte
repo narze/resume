@@ -16,6 +16,36 @@
     website: "monosor.com",
   }
 
+  const technologies = [
+    {
+      section: "Languages:",
+      details:
+        "Ruby, JavaScript, Node.js (strong). TypeScript, SQL (proficient).",
+    },
+    {
+      section: "Frameworks:",
+      details:
+        "Ruby on Rails, ReactJS, NextJS, NestJS, Svelte, TailwindCSS, Bootstrap",
+    },
+    {
+      section: "Tools:",
+      details:
+        "Git, Terraform, Docker, Kubernetes, Helm, ArgoCD, FluxCD, Robot Framework, Selenium, Zsh",
+    },
+    {
+      section: "Other:",
+      details:
+        "AWS, GCP, Firebase, Vercel, DigitalOcean, Cloud66, Github Actions, CircleCI, CloudFlare",
+    },
+  ]
+
+  const educations = [
+    {
+      head: "B.Eng. Computer Engineering",
+      details: "Chulalongkorn University, TH. 2007-2010 (GPA 3.45)",
+    },
+  ]
+
   const workExperiences = [
     {
       position: "Full-stack Developer, Co-founder",
@@ -181,33 +211,12 @@
     </h2>
     <hr />
     <ul class="text-left list-disc pl-8">
-      <li>
-        <span class="w-28 inline-block">Languages:</span>
-        <span
-          >Ruby, JavaScript, Node.js (strong). TypeScript, SQL (proficient).</span
-        >
-      </li>
-      <li>
-        <span class="w-28 inline-block">Frameworks:</span>
-        <span
-          >Ruby on Rails, ReactJS, NextJS, NestJS, Svelte, TailwindCSS,
-          Bootstrap</span
-        >
-      </li>
-      <li>
-        <span class="w-28 inline-block">Tools:</span>
-        <span
-          >Git, Terraform, Docker, Kubernetes, Helm, ArgoCD, FluxCD, Robot
-          Framework, Selenium, Zsh</span
-        >
-      </li>
-      <li>
-        <span class="w-28 inline-block">Other:</span>
-        <span
-          >AWS, GCP, Firebase, Vercel, DigitalOcean, Cloud66, Github Actions,
-          CircleCI, CloudFlare</span
-        >
-      </li>
+      {#each technologies as tech}
+        <li>
+          <span class="w-28 inline-block">{tech.section}</span>
+          <span>{tech.details}</span>
+        </li>
+      {/each}
     </ul>
   </section>
   <section>
@@ -215,10 +224,11 @@
     <hr />
 
     <ul class="text-left list-disc pl-8">
-      <li>
-        <strong>B.Eng. Computer Engineering</strong>, Chulalongkorn University,
-        TH. 2007-2010 (GPA 3.45)
-      </li>
+      {#each educations as edu}
+        <li>
+          <strong>{edu.head}</strong>, {edu.details}
+        </li>
+      {/each}
     </ul>
   </section>
   <section>
@@ -258,33 +268,6 @@
     </ul>
   </section>
 
-  <!--
-  <img
-    width="100"
-    height="100"
-    src={logo}
-    alt="Svelte Logo"
-    class="inline-block"
-  />
-  <h1
-    class="text-6xl uppercase font-thin leading-tight my-8 mx-auto max-w-xs sm:max-w-xs"
-  >
-    Hello Vite!
-  </h1>
-
-  <Counter id="0" />
-
-  <p class="max-w-xs sm:max-w-none my-4 mx-auto leading-5">
-    Visit <a class="text-blue-600 underline" href="https://svelte.dev"
-      >svelte.dev</a
-    > to learn how to build Svelte apps.
-  </p>
-
-  <p class="max-w-xs sm:max-w-none my-4 mx-auto leading-5">
-    Check out <a href="https://github.com/sveltejs/kit#readme">SvelteKit</a> for
-    the officially supported framework, also powered by Vite!
-  </p>
-  -->
   <footer class="print-only">
     (See <a href={fullVersionLink} target="_blank" rel="noopener"
       >full version</a
