@@ -33,12 +33,20 @@
   class="web-only text-center p-4 sm:p-6 bg-green-400 text-white w-screen"
 >
   <h1 class="text-4xl">Resumette</h1>
+  <h3>
+    <button on:click={toggleMode} class="underline text-lg"
+      >{editMode ? "[View]" : "[Edit]"}</button
+    >
+    <button on:click={() => window.print()} class="underline text-lg"
+      >[Print]</button
+    >
+  </h3>
   <p>
     Printer-friendly standard résumé, any HTML tags with <code>web-only</code> CSS
     class will be hidden on print.
   </p>
   <p>
-    You can toggle <button on:click={toggleMode} class="underline text-lg"
+    You can toggle <button on:click={toggleMode} class="underline"
       >[Edit Mode]</button
     > to hide some sections before printing.
   </p>
