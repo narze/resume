@@ -109,7 +109,7 @@ export const projects = [
     name: "Manoonchai",
     details:
       "Modern, productive, and data-driven Thai keyboard layout. A collection of projects built with TypeScript, Elixir, Svelte",
-    url: "github.com/manoonchai",
+    url: "manoonchai.com",
   },
   {
     name: "9armbot (Contributor)",
