@@ -140,6 +140,17 @@ export const projects = [
       "Interactive & printable résumé with tailored skills fitted in single letter page (This page!)",
     url: "manassarn-resume.vercel.app",
   },
+  {
+    name: "Popyut",
+    details:
+      "Contributed to a clone of popcat.click meme clicking game, gone viral and got 2M visitors within one week",
+    url: "github.com/popyut/popyut",
+  },
+  {
+    name: "Resound",
+    details: "Remote soundboard for meetings or streaming. Uses WebRTC instead of server to host rooms.",
+    url: "github.com/narze/resound",
+  }
 ]
 
 export const interests = [
