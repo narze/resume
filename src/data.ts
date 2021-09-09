@@ -28,7 +28,7 @@ export const technologies = [
   {
     section: "Tools:",
     details:
-      "Git, Terraform, Docker, Kubernetes, Helm, ArgoCD, FluxCD, Robot Framework, Selenium, Zsh",
+      "Git, Terraform, Docker, Kubernetes, Helm, ArgoCD, FluxCD, Robot Framework, Selenium, Zsh, GitHub Codespaces",
   },
   {
     section: "Other:",
