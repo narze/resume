@@ -6,7 +6,7 @@ export const ogImageUrl =
 export const introData = {
   name: "Manassarn Manoonchai",
   nickname: "Noom",
-  phone: "+66863949474",
+  phone: "",
   email: "manassarn@gmail.com",
   github: "narze",
   linkedin: "manassarnmanoonchai",
