@@ -52,10 +52,4 @@
   a {
     text-decoration: underline;
   }
-
-  @media print {
-    h1 {
-      @apply text-3xl;
-    }
-  }
 </style>
