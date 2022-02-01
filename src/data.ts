@@ -135,10 +135,15 @@ export const projects = [
     url: "rubygems.org/gems/baht",
   },
   {
+    name: "Baht.js",
+    details: "Convert number to Thai Baht format, but 10x faster & fully typed.",
+    url: "npmjs.com/package/baht",
+  },
+  {
     name: "Resumette",
     details:
       "Interactive & printable résumé with tailored skills fitted in single letter page (This page!)",
-    url: "manassarn-resume.vercel.app",
+    url: "resume.narze.live",
   },
   {
     name: "Popyut",
@@ -150,6 +155,11 @@ export const projects = [
     name: "Resound",
     details: "Remote soundboard for meetings or streaming. Uses WebRTC instead of server to host rooms.",
     url: "github.com/narze/resound",
+  },
+  {
+    name: "Thwordle",
+    details: "Thai language Wordle clone.",
+    url: "thwordle.narze.live",
   }
 ]
 
