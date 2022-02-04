@@ -47,8 +47,8 @@ export const educations = [
 export const workExperiences = [
   {
     position: "Senior Infrastructure Software Engineer",
-    company: "OPN Co., Ltd.",
-    url: "https://www.opn.ooo/",
+    company: "OPN TH",
+    url: "https://opn.ooo/",
     years: ["2021", "Current"],
     details: [
       "Containerized, developed, and maintained Opn.Store infrastructure on EKS across multiple environments using Terraform, Docker, Kubernetes, and Helm",
