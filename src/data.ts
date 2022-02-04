@@ -23,7 +23,7 @@ export const technologies = [
   {
     section: "Frameworks:",
     details:
-      "Ruby on Rails, ReactJS, NextJS, NestJS, Svelte, TailwindCSS, Bootstrap",
+      "Ruby on Rails, ReactJS, NextJS, NestJS, SvelteJS, TailwindCSS, Bootstrap",
   },
   {
     section: "Tools:",
@@ -46,10 +46,22 @@ export const educations = [
 
 export const workExperiences = [
   {
+    position: "Senior Infrastructure Software Engineer",
+    company: "OPN Co., Ltd.",
+    url: "https://www.opn.ooo/",
+    years: ["2021", "Current"],
+    details: [
+      "Containerized, developed, and maintained Opn.Store infrastructure on EKS across multiple environments using Terraform, Docker, Kubernetes, and Helm",
+      "Designed architecture using Microservices Pattern & Domain-Driven Design on Sales Promotion feature for Opn.Store",
+      "Helped, and collaborated with software engineering team on coding with good practices and lowering technical debt",
+      "Researched & introduced modern web technologies to the team, such as SvelteJS, TailwindCSS, Vite, etc.",
+    ],
+  },
+  {
     position: "Full-stack Developer, Co-founder",
     company: "EventPop",
     url: "https://eventpop.me",
-    years: ["2015", "Current"],
+    years: ["2015", "2021"],
     details: [
       "Designed, developed and maintained several core services for EventPop website (Ticketing, Seating, Payment, Fee Calculation, Line Item, Billing, Reporting, APIs, etc.) using Ruby on Rails",
       "Researched & applied improvements for development workflow. Testing libraries : RSpec, Guard, VCR, Capybara, Selenium, Cucumber, Timecop. CI/CD : CircleCI, Github Actions, Drone CI, ArgoCD, FluxCD, Terraform",
@@ -136,7 +148,8 @@ export const projects = [
   },
   {
     name: "Baht.js",
-    details: "Convert number to Thai Baht format, but 10x faster & fully typed.",
+    details:
+      "Convert number to Thai Baht format, but 10x faster & fully typed.",
     url: "npmjs.com/package/baht",
   },
   {
@@ -153,14 +166,15 @@ export const projects = [
   },
   {
     name: "Resound",
-    details: "Remote soundboard for meetings or streaming. Uses WebRTC instead of server to host rooms.",
+    details:
+      "Remote soundboard for meetings or streaming. Uses WebRTC instead of server to host rooms.",
     url: "github.com/narze/resound",
   },
   {
     name: "Thwordle",
     details: "Thai language Wordle clone.",
     url: "thwordle.narze.live",
-  }
+  },
 ]
 
 export const interests = [
