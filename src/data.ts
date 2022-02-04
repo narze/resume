@@ -9,7 +9,7 @@ export const introData = {
   phone: "",
   email: "manassarn@gmail.com",
   github: "narze",
-  linkedin: "manassarnmanoonchai",
+  linkedin: "manassarn",
   location: "Bangkok, Thailand",
   website: "monosor.com",
 }
