@@ -11,7 +11,7 @@ export const introData = {
   github: "narze",
   linkedin: "manassarn",
   location: "Bangkok, Thailand",
-  website: "monosor.com",
+  website: "narze.live",
 }
 
 export const technologies = [
