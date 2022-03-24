@@ -55,7 +55,7 @@ export const workExperiences = [
       "Designed architecture using Microservices Pattern & Domain-Driven Design on Sales Promotion feature for Opn.Store",
       "Helped, and collaborated with software engineering team on coding with good practices and lowering technical debt",
       "Researched & introduced modern web technologies to the team, such as SvelteJS, TailwindCSS, Vite, etc.",
-      "Designed 4 E-commerce related services for Opn.Store",
+      "Designed, bootstrapped, and developed 4 E-commerce related services for Opn.Store",
     ],
   },
   {
