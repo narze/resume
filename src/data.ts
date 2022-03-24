@@ -69,7 +69,7 @@ export const workExperiences = [
       "Maintained server operations, deployments, containerization with Docker & Kubernetes, CI/CD. Also pioneered DevOps practices in the team keeping daily release & deployment possible.",
       "Integrated 3rd-party services : Kerry Express, DHL, Queue-It, Refund Protect, Skootar, Tanita Body Scale",
       "Integrated payment service providers : Omise, ThaiEPay, 123 by 2C2P, SCB-Easy, K-PayPlus, K-PaymentGateway. Processed more than 1 billion THB",
-      "Helped interview more than 20 software engineers, gave insights & feedbacks on technical aspects of candidates, designed tech-related questions & on-site coding challenges",
+      "Helped interview more than 50 software engineers, gave insights & feedbacks on technical aspects of candidates, designed tech-related questions & on-site coding challenges",
     ],
   },
   {
