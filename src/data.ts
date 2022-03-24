@@ -55,6 +55,7 @@ export const workExperiences = [
       "Designed architecture using Microservices Pattern & Domain-Driven Design on Sales Promotion feature for Opn.Store",
       "Helped, and collaborated with software engineering team on coding with good practices and lowering technical debt",
       "Researched & introduced modern web technologies to the team, such as SvelteJS, TailwindCSS, Vite, etc.",
+      "Designed 4 E-commerce related services for Opn.Store",
     ],
   },
   {
@@ -63,11 +64,12 @@ export const workExperiences = [
     url: "https://eventpop.me",
     years: ["2015", "2021"],
     details: [
-      "Designed, developed and maintained several core services for EventPop website (Ticketing, Seating, Payment, Fee Calculation, Line Item, Billing, Reporting, APIs, etc.) using Ruby on Rails",
+      "Designed, developed and maintained several core services for EventPop website (Ticketing, Seating, Payment, Fee Calculation, Line Item, Billing, Reporting, APIs, etc.) using Ruby on Rails, sold 2M+ tickets within 6 years",
       "Researched & applied improvements for development workflow. Testing libraries : RSpec, Guard, VCR, Capybara, Selenium, Cucumber, Timecop. CI/CD : CircleCI, Github Actions, Drone CI, ArgoCD, FluxCD, Terraform",
-      "Maintained server operations, deployments, containerization with Docker & Kubernetes, CI/CD. Also pioneered DevOps practices in the team",
+      "Maintained server operations, deployments, containerization with Docker & Kubernetes, CI/CD. Also pioneered DevOps practices in the team keeping daily release & deployment possible.",
       "Integrated 3rd-party services : Kerry Express, DHL, Queue-It, Refund Protect, Skootar, Tanita Body Scale",
-      "Integrated payment service providers : Omise, ThaiEPay, 123 by 2C2P, SCB-Easy, K-PayPlus, K-PaymentGateway",
+      "Integrated payment service providers : Omise, ThaiEPay, 123 by 2C2P, SCB-Easy, K-PayPlus, K-PaymentGateway. Processed more than 1 billion THB",
+      "Helped interview more than 20 software engineers, gave insights & feedbacks on technical aspects of candidates, designed tech-related questions & on-site coding challenges",
     ],
   },
   {
@@ -76,11 +78,12 @@ export const workExperiences = [
     url: "https://fb.me/makerzoo",
     years: ["2014", "2016"],
     details: [
-      "Pioneered Maker Movement in Thailand by opening first of the Makerspaces in Bangkok",
-      "Hosted maker workshops eg. 3D-modeling, 3D-printing, Arduino, IoT, etc",
-      "Developed hardware-related products for clients and startups",
-      "Developed smart door lock system for Hubba, a co-working space in Bangkok",
-      "Provided 3D-printing service & consultant",
+      "Pioneered Maker Movement in Thailand by opening first of the Makerspaces in Bangkok & Thailand",
+      "Hosted maker workshops eg. 3D-modeling, 3D-printing, Arduino, IoT, etc. Having more than 100 participants combined.",
+      "Developed hardware-related products for 3-5 clients and startups",
+      "Developed smart door lock system for Hubba, first co-working space in Bangkok",
+      "Provided 3D-printing service & consultant to more than 50 clients",
+      "Hosted 10+ chapters of tutorial videos on Intel Galileo development board, for Intel Thailand",
     ],
   },
   {
@@ -99,9 +102,9 @@ export const workExperiences = [
     url: "https://www.facebook.com/figabyte",
     years: ["2011", "2014"],
     details: [
-      "Developed several Facebook web apps with CodeIgniter, using Facebook API",
+      "Developed more than 20 Facebook web apps with CodeIgniter, using Facebook API",
       "Developed web platform using Ruby on Rails 3 & 4",
-      "Made iOS apps for clients using PhoneGap and RubyMotion",
+      "Made iOS apps for several clients using PhoneGap and RubyMotion",
     ],
   },
   {
