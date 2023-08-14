@@ -1,18 +1,38 @@
-# Resumette
+# create-svelte
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fnarze%2Fresume)
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-Interactive & printable résumé with tailored skills fitted in single letter page.
+## Creating a project
 
-## Features
+If you're seeing this, you've probably already done this step. Congrats!
 
-- Plain and clean, no rainbow colors, no pictures, no anything.
-- Allow you to add your profile details to your heart's content, with `Edit Mode` you can hide some of the sections to make your résumé fit in single A4/Letter page.
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-## How to use
+# create a new project in my-app
+npm create svelte@latest my-app
+```
 
-1. Click `Use this template` on Github, or fork this project, or [Deploy with Vercel](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fnarze%2Fresume)
-2. `yarn` or `npm install`
-3. Edit your data in [`src/data.ts`](./src/data.ts)
-4. Run with `yarn dev` or `npm run dev`
-5. Deploy with `Vercel` or `Netlify` to show resume online
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
