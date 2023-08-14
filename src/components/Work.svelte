@@ -19,11 +19,11 @@
 		</div>
 		<ul class="text-left list-disc pl-8 print:pl-6">
 			{#each details as detail}
-				<li>
-					<Hideable>
+				<Hideable>
+					<li>
 						{detail}
-					</Hideable>
-				</li>
+					</li>
+				</Hideable>
 			{/each}
 		</ul>
 	</Hideable>
