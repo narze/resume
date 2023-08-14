@@ -13,12 +13,7 @@
 		technologies,
 		workExperiences
 	} from '../data';
-
-	let editMode = false;
-
-	function toggleMode() {
-		editMode = !editMode;
-	}
+	const dataLink = `${sourceLink}/blob/main/src/data.ts`;
 </script>
 
 <!-- Remove this is you does not want Kofi widget on your site -->
@@ -29,26 +24,18 @@
 <header class="web-only text-center p-4 sm:p-6 bg-green-400 text-white w-screen">
 	<h1 class="text-4xl">Resumette</h1>
 	<h3>
-		<button on:click={toggleMode} class="underline text-lg">{editMode ? '[View]' : '[Edit]'}</button
-		>
 		<button on:click={() => window.print()} class="underline text-lg">[Print]</button>
 	</h3>
 	<p>
 		Printer-friendly standard résumé, any HTML tags with <code>web-only</code> CSS class will be hidden
 		on print.
 	</p>
-	<p>
-		You can toggle <button on:click={toggleMode} class="underline">[Edit Mode]</button> to hide some
-		sections before printing.
-	</p>
-	(<a href={sourceLink} target="_blank" rel="noopener">Source</a>)
+	<p>You can click at any sections or lines hide some information before printing.</p>
+	<a href={sourceLink} target="_blank" rel="noopener">[Source]</a>
+	<a href={dataLink} target="_blank" rel="noopener">[Data]</a>
 </header>
 
-<main
-	class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl {editMode
-		? 'edit-mode'
-		: 'display-mode'}"
->
+<main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
 	<Intro {...introData} />
 
 	<section>
@@ -57,12 +44,12 @@
 			<hr />
 			<ul class="text-left list-disc pl-8">
 				{#each technologies as tech}
-					<li>
-						<Hideable>
+					<Hideable>
+						<li>
 							<span class="w-28 inline-block">{tech.section}</span>
 							<span>{tech.details}</span>
-						</Hideable>
-					</li>
+						</li>
+					</Hideable>
 				{/each}
 			</ul>
 		</Hideable>
@@ -75,11 +62,11 @@
 
 			<ul class="text-left list-disc pl-8">
 				{#each educations as edu}
-					<li>
-						<Hideable>
+					<Hideable>
+						<li>
 							<strong>{edu.head}</strong>, {edu.details}
-						</Hideable>
-					</li>
+						</li>
+					</Hideable>
 				{/each}
 			</ul>
 		</Hideable>
@@ -103,15 +90,15 @@
 
 			<ul class="text-left list-disc pl-8">
 				{#each projects as project}
-					<li>
-						<Hideable hide={project.hide}>
+					<Hideable hide={project.hide}>
+						<li>
 							<strong>{project.name}</strong>
 							- {project.details}
 							<a href="https://{project.url}" target="_blank" rel="noreferrer"
 								><strong>{project.url}</strong></a
 							>
-						</Hideable>
-					</li>
+						</li>
+					</Hideable>
 				{/each}
 			</ul>
 		</Hideable>
@@ -124,11 +111,11 @@
 
 			<ul class="text-left list-disc pl-8">
 				{#each interests as interest}
-					<li>
-						<Hideable>
+					<Hideable>
+						<li>
 							{interest}
-						</Hideable>
-					</li>
+						</li>
+					</Hideable>
 				{/each}
 			</ul>
 		</Hideable>
@@ -163,10 +150,6 @@
 	}
 
 	:global(.print-only) {
-		display: none;
-	}
-
-	:global(main.display-mode .hide-toggle) {
 		display: none;
 	}
 
