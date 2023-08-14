@@ -2,7 +2,7 @@
 	import Intro from './Intro.svelte';
 	import Work from './Work.svelte';
 	import Kofi from './Kofi.svelte';
-	import HideToggle from './HideToggle.svelte';
+	import Hideable from './Hideable.svelte';
 	import {
 		educations,
 		fullVersionLink,
@@ -52,77 +52,86 @@
 	<Intro {...introData} />
 
 	<section>
-		<HideToggle />
-		<h2 class="text-2xl print:text-4xl uppercase text-left">Technologies and Languages</h2>
-		<hr />
-		<ul class="text-left list-disc pl-8">
-			{#each technologies as tech}
-				<li>
-					<HideToggle />
-					<span class="w-28 inline-block">{tech.section}</span>
-					<span>{tech.details}</span>
-				</li>
-			{/each}
-		</ul>
+		<Hideable>
+			<h2 class="text-2xl print:text-4xl uppercase text-left">Technologies and Languages</h2>
+			<hr />
+			<ul class="text-left list-disc pl-8">
+				{#each technologies as tech}
+					<li>
+						<Hideable>
+							<span class="w-28 inline-block">{tech.section}</span>
+							<span>{tech.details}</span>
+						</Hideable>
+					</li>
+				{/each}
+			</ul>
+		</Hideable>
 	</section>
 
 	<section>
-		<HideToggle />
-		<h2 class="text-2xl print:text-4xl uppercase text-left">Education</h2>
-		<hr />
+		<Hideable>
+			<h2 class="text-2xl print:text-4xl uppercase text-left">Education</h2>
+			<hr />
 
-		<ul class="text-left list-disc pl-8">
-			{#each educations as edu}
-				<li>
-					<HideToggle />
-					<strong>{edu.head}</strong>, {edu.details}
-				</li>
-			{/each}
-		</ul>
+			<ul class="text-left list-disc pl-8">
+				{#each educations as edu}
+					<li>
+						<Hideable>
+							<strong>{edu.head}</strong>, {edu.details}
+						</Hideable>
+					</li>
+				{/each}
+			</ul>
+		</Hideable>
 	</section>
 
 	<section>
-		<HideToggle />
-		<h2 class="text-2xl print:text-4xl uppercase text-left">Work Experience</h2>
-		<hr />
+		<Hideable>
+			<h2 class="text-2xl print:text-4xl uppercase text-left">Work Experience</h2>
+			<hr />
 
-		{#each workExperiences as exp}
-			<Work {...exp} />
-		{/each}
+			{#each workExperiences as exp}
+				<Work {...exp} />
+			{/each}
+		</Hideable>
 	</section>
 
 	<section>
-		<HideToggle />
-		<h2 class="text-2xl print:text-4xl uppercase text-left">Projects</h2>
-		<hr />
+		<Hideable>
+			<h2 class="text-2xl print:text-4xl uppercase text-left">Projects</h2>
+			<hr />
 
-		<ul class="text-left list-disc pl-8">
-			{#each projects as project}
-				<li>
-					<HideToggle />
-					<strong>{project.name}</strong>
-					- {project.details}
-					<a href="https://{project.url}" target="_blank" rel="noreferrer"
-						><strong>{project.url}</strong></a
-					>
-				</li>
-			{/each}
-		</ul>
+			<ul class="text-left list-disc pl-8">
+				{#each projects as project}
+					<li>
+						<Hideable hide={project.hide}>
+							<strong>{project.name}</strong>
+							- {project.details}
+							<a href="https://{project.url}" target="_blank" rel="noreferrer"
+								><strong>{project.url}</strong></a
+							>
+						</Hideable>
+					</li>
+				{/each}
+			</ul>
+		</Hideable>
 	</section>
 
 	<section>
-		<HideToggle />
-		<h2 class="text-2xl print:text-4xl uppercase text-left">Interests</h2>
-		<hr />
+		<Hideable>
+			<h2 class="text-2xl print:text-4xl uppercase text-left">Interests</h2>
+			<hr />
 
-		<ul class="text-left list-disc pl-8">
-			{#each interests as interest}
-				<li>
-					<HideToggle />
-					{interest}
-				</li>
-			{/each}
-		</ul>
+			<ul class="text-left list-disc pl-8">
+				{#each interests as interest}
+					<li>
+						<Hideable>
+							{interest}
+						</Hideable>
+					</li>
+				{/each}
+			</ul>
+		</Hideable>
 	</section>
 
 	<footer class="print-only">
