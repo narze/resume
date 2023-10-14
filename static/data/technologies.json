@@ -1,0 +1,18 @@
+[
+	{
+		"section": "Languages:",
+		"details": "Ruby, JavaScript, Node.js (strong). TypeScript, SQL (proficient)."
+	},
+	{
+		"section": "Frameworks:",
+		"details": "Ruby on Rails, ReactJS, NextJS, NestJS, SvelteJS, TailwindCSS, Bootstrap"
+	},
+	{
+		"section": "Tools:",
+		"details": "Git, Terraform, Docker, Kubernetes, Helm, ArgoCD, FluxCD, Robot Framework, Selenium, Zsh, GitHub Codespaces"
+	},
+	{
+		"section": "Other:",
+		"details": "AWS, GCP, Firebase, Vercel, DigitalOcean, Cloud66, Github Actions, CircleCI, CloudFlare"
+	}
+]
