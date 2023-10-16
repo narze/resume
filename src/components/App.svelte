@@ -1,92 +1,35 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import Intro from './Intro.svelte';
-	import Work from './Work.svelte';
-	import Kofi from './Kofi.svelte';
+	import type { IProfileResp } from '../types';
 	import Hideable from './Hideable.svelte';
-	import type { IEducation, IIntro, IProject, ITechnology, IWorkExperience } from '../types';
+	import Intro from './Intro.svelte';
+	import Kofi from './Kofi.svelte';
+	import Work from './Work.svelte';
 
-	let introData: IIntro = {} as IIntro;
-	let projects: IProject[] = [];
-	let technologies: ITechnology[] = [];
-	let workExperiences: IWorkExperience[] = [];
-	let educations: IEducation[] = [];
-	let interests: string[] = [];
-	let sourceLink: string = '';
-	let fullVersionLink: string = '';
+	let profile: IProfileResp;
 
-	const dataLink = `${sourceLink}/blob/main/src/data.ts`;
+	$: dataLink = `${sourceLink}/blob/main/src/data.ts`;
+	$: ({
+		intro = {} as IProfileResp['intro'],
+		projects = [],
+		technologies = [],
+		workExperiences = [],
+		educations = [],
+		interests = [],
+		resumeUrl: { sourceLink = '', fullVersionLink = '' } = {}
+	} = profile || {});
 
-	onMount(async () => {
-		const fetchList = [
-			fetchIntroData,
-			fetchProjects,
-			fetchTechnologies,
-			fetchWorkExperiences,
-			fetchEducations,
-			fetchInterests,
-			fetchResumeUrl,
-		];
+	onMount(async () => (profile = await fetchResumeProfile()));
 
-		const [
-			introResp,
-			projectsResp,
-			technologiesResp,
-			workExperiencesResp,
-			educationsResp,
-			interestsResp,
-			{ source = '', fullVersion = '' }
-		] = await Promise.all(fetchList.map((fetch) => fetch()));
-
-		introData = introResp;
-		projects = projectsResp;
-		technologies = technologiesResp;
-		workExperiences = workExperiencesResp;
-		educations = educationsResp;
-		interests = interestsResp
-		sourceLink = source
-		fullVersionLink = fullVersion
-	});
-
-	async function fetchIntroData() {
-		const resp = await fetch('/data/intro.json');
-		return await resp.json();
-	}
-
-	async function fetchProjects() {
-		const resp = await fetch('/data/projects.json');
-		return await resp.json();
-	}
-
-	async function fetchTechnologies() {
-		const resp = await fetch('/data/technologies.json');
-		return await resp.json();
-	}
-
-	async function fetchWorkExperiences() {
-		const resp = await fetch('/data/workExperiences.json');
-		return await resp.json();
-	}
-
-	async function fetchEducations() {
-		const resp = await fetch('/data/educations.json');
-		return await resp.json();
-	}
-
-	async function fetchInterests() {
-		const resp = await fetch('/data/interests.json');
-		return await resp.json();
-	}
-
-	async function fetchResumeUrl() {
-		const resp = await fetch('/data/resumeUrls.json');
+	async function fetchResumeProfile() {
+		const resp = await fetch('/data/profile.json');
 		return await resp.json();
 	}
 </script>
 
 <!-- Remove this is you does not want Kofi widget on your site -->
-{#if introData.github == 'narze'}
-	<Kofi name={introData.github} />
+{#if intro.github == 'narze'}
+	<Kofi name={intro.github} />
 {/if}
 
 <header class="web-only text-center p-4 sm:p-6 bg-green-400 text-white w-screen">
@@ -104,7 +47,7 @@
 </header>
 
 <main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
-	<Intro {...introData} />
+	<Intro {...intro} />
 
 	<section>
 		<Hideable>

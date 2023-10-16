@@ -1,3 +1,15 @@
+export interface IProfileResp {
+	intro: IIntro;
+	projects: IProject[];
+	technologies: ITechnology[];
+	workExperiences: IWorkExperience[];
+	educations: IEducation[];
+	interests: string[];
+	resumeUrl: {
+		sourceLink: string;
+		fullVersionLink: string;
+	};
+}
 export interface IIntro {
 	name: string;
 	nickname: string;
