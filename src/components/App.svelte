@@ -8,7 +8,7 @@
 
 	let profile: IProfileResp;
 
-	$: dataLink = `${sourceLink}/blob/main/src/data.ts`;
+	$: dataLink = `${sourceLink}/blob/main/static/data/profile.json`;
 	$: ({
 		intro = {} as IProfileResp['intro'],
 		projects = [],
