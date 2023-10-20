@@ -1,24 +1,35 @@
 <script lang="ts">
-	import Intro from './Intro.svelte';
-	import Work from './Work.svelte';
-	import Kofi from './Kofi.svelte';
+	import { onMount } from 'svelte';
+	import type { IProfileResp } from '../types';
 	import Hideable from './Hideable.svelte';
-	import {
-		educations,
-		fullVersionLink,
-		interests,
-		introData,
-		projects,
-		sourceLink,
-		technologies,
-		workExperiences
-	} from '../data';
-	const dataLink = `${sourceLink}/blob/main/src/data.ts`;
+	import Intro from './Intro.svelte';
+	import Kofi from './Kofi.svelte';
+	import Work from './Work.svelte';
+
+	let profile: IProfileResp;
+
+	$: dataLink = `${sourceLink}/blob/main/static/data/profile.json`;
+	$: ({
+		intro = {} as IProfileResp['intro'],
+		projects = [],
+		technologies = [],
+		workExperiences = [],
+		educations = [],
+		interests = [],
+		resumeUrl: { sourceLink = '', fullVersionLink = '' } = {}
+	} = profile || {});
+
+	onMount(async () => (profile = await fetchResumeProfile()));
+
+	async function fetchResumeProfile() {
+		const resp = await fetch('/data/profile.json');
+		return await resp.json();
+	}
 </script>
 
 <!-- Remove this is you does not want Kofi widget on your site -->
-{#if introData.github == 'narze'}
-	<Kofi name={introData.github} />
+{#if intro.github == 'narze'}
+	<Kofi name={intro.github} />
 {/if}
 
 <header class="web-only text-center p-4 sm:p-6 bg-green-400 text-white w-screen">
@@ -36,7 +47,7 @@
 </header>
 
 <main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
-	<Intro {...introData} />
+	<Intro {...intro} />
 
 	<section>
 		<Hideable>
