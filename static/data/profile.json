@@ -103,10 +103,34 @@
 	],
 	"workExperiences": [
 		{
-			"position": "Full-stack Developer, Co-founder",
-			"company": "EventPop",
+			"position": "Lead Software Engineer",
+			"company": "EVP Corporation (formerly EventPop)",
 			"url": "https://eventpop.me",
-			"years": ["2015", "Current"],
+			"years": ["2023", "Current"],
+			"details": [
+				"Developed ticket resale platform for EventPop within 1 month",
+				"Upgraded ticketing system with Dual-boot methodology with zero downtime",
+				"Introduced Consumer Driven Contract Testing to the development team using Pact"
+			]
+		},
+		{
+			"position": "Senior Infrastructure Software Engineer",
+			"company": "OPN TH (formerly Omise)",
+			"url": "https://opn.ooo/",
+			"years": ["2021", "2023"],
+			"details": [
+				"Containerized, developed, and maintained Opn.Store infrastructure on EKS across multiple environments using Terraform, Docker, Kubernetes, and Helm",
+				"Designed architecture using Microservices Pattern & Domain-Driven Design on Sales Promotion feature for Opn.Store",
+				"Helped, and collaborated with software engineering team on coding with good practices and lowering technical debt",
+				"Researched & introduced modern web technologies to the team, such as SvelteJS, TailwindCSS, Vite, etc.",
+				"Designed, bootstrapped, and developed 4 E-commerce related services for Opn.Store"
+			]
+		},
+		{
+			"position": "Full-stack Developer, Co-founder",
+			"company": "EventPop (acquired by OPN TH in 2021, divested in 2023)",
+			"url": "https://eventpop.me",
+			"years": ["2015", "2021"],
 			"details": [
 				"Designed, developed and maintained several core services for EventPop website (Ticketing, Seating, Payment, Fee Calculation, Line Item, Billing, Reporting, APIs, etc.) using Ruby on Rails, sold 2M+ tickets within 6 years",
 				"Researched & applied improvements for development workflow. Testing libraries : RSpec, Guard, VCR, Capybara, Selenium, Cucumber, Timecop. CI/CD : CircleCI, Github Actions, Drone CI, ArgoCD, FluxCD, Terraform",
@@ -114,19 +138,6 @@
 				"Integrated 3rd-party services : Kerry Express, DHL, Queue-It, Refund Protect, Skootar, Tanita Body Scale",
 				"Integrated payment service providers : Omise, ThaiEPay, 123 by 2C2P, SCB-Easy, K-PayPlus, K-PaymentGateway. Processed more than 1 billion THB",
 				"Helped interview more than 50 software engineers, gave insights & feedbacks on technical aspects of candidates, designed tech-related questions & on-site coding challenges"
-			]
-		},
-		{
-			"position": "Senior Infrastructure Software Engineer",
-			"company": "OPN TH",
-			"url": "https://opn.ooo/",
-			"years": ["2021", "Current"],
-			"details": [
-				"Containerized, developed, and maintained Opn.Store infrastructure on EKS across multiple environments using Terraform, Docker, Kubernetes, and Helm",
-				"Designed architecture using Microservices Pattern & Domain-Driven Design on Sales Promotion feature for Opn.Store",
-				"Helped, and collaborated with software engineering team on coding with good practices and lowering technical debt",
-				"Researched & introduced modern web technologies to the team, such as SvelteJS, TailwindCSS, Vite, etc.",
-				"Designed, bootstrapped, and developed 4 E-commerce related services for Opn.Store"
 			]
 		},
 		{
@@ -183,11 +194,7 @@
 	],
 	"interests": [
 		"Areas : Coding, Productivity & Life-hacks, Mechanical Keyboards",
-		"Typing : 120+ words per minute (Colemak Mod-DH layout)",
-		"Games : Music games, FPS, MOBA, Puzzle",
-		"Music : EDM, Rock, Japanese",
-		"Remote working is a OK. I extensively use self time tracking app for all my works.",
-		"Pets : I have 3 dogs"
+		"Typing : 120+ words per minute (Colemak Mod-DH layout)"
 	],
 	"resumeUrl": {
 		"sourceLink": "https://github.com/narze/resume",
