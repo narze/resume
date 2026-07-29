@@ -11,9 +11,15 @@
 	},
 	"projects": [
 		{
-			"name": "ChatOS",
-			"details": "Hackable chatbot web application",
-			"url": "chat.narze.live",
+			"name": "9arm AI Passport",
+			"details": "Members-only chat & API access to a self-hosted LLM, shipped in 4 days.",
+			"url": "medium.com/p/72ff70e5af88",
+			"hide": false
+		},
+		{
+			"name": "Manoonchai",
+			"details": "Modern, productive, and data-driven Thai keyboard layout. A collection of projects built with TypeScript, Elixir, Svelte",
+			"url": "manoonchai.com",
 			"hide": false
 		},
 		{
@@ -23,10 +29,10 @@
 			"hide": false
 		},
 		{
-			"name": "Manoonchai",
-			"details": "Modern, productive, and data-driven Thai keyboard layout. A collection of projects built with TypeScript, Elixir, Svelte",
-			"url": "manoonchai.com",
-			"hide": false
+			"name": "ChatOS",
+			"details": "Hackable chatbot web application",
+			"url": "chat.narze.live",
+			"hide": true
 		},
 		{
 			"name": "Dotfiles",
@@ -38,6 +44,12 @@
 			"name": "Resumette",
 			"details": "Interactive & printable résumé with tailored skills fitted in single letter page (This page!)",
 			"url": "resume.narze.live",
+			"hide": false
+		},
+		{
+			"name": "Wordin",
+			"details": "Thai word ladder puzzle game with daily levels.",
+			"url": "word.in.th",
 			"hide": false
 		},
 		{
@@ -86,19 +98,27 @@
 	"technologies": [
 		{
 			"section": "Languages:",
-			"details": "Ruby, JavaScript, Node.js (strong). TypeScript, SQL (proficient)."
+			"details": "Ruby, JavaScript, TypeScript, Node.js (strong). SQL, Bash, Elixir (proficient)."
 		},
 		{
 			"section": "Frameworks:",
-			"details": "Ruby on Rails, ReactJS, NextJS, NestJS, SvelteJS, TailwindCSS, Bootstrap"
+			"details": "Ruby on Rails, Grape, Sidekiq, ReactJS, NextJS, SvelteJS, Astro, Alpine.js, Stimulus, Vite, TailwindCSS"
+		},
+		{
+			"section": "AI & Agents:",
+			"details": "Claude Code, OpenCode, Codex, Cursor, Agent Skills & Plugins, agent tool integrations, LLM automation pipelines, spec-driven & agentic development workflows"
+		},
+		{
+			"section": "Testing:",
+			"details": "RSpec, Playwright, Vitest, Capybara, Selenium, k6 (load testing), Pact (consumer-driven contract testing)"
+		},
+		{
+			"section": "Cloud & Infra:",
+			"details": "AWS (ECS, ALB, S3, EKS), Cloudflare (Workers, Durable Objects, CDN, Bot Management), GCP, Vercel, Terraform, Pulumi, Docker, Kubernetes, Helm, ArgoCD, FluxCD"
 		},
 		{
 			"section": "Tools:",
-			"details": "Git, Terraform, Docker, Kubernetes, Helm, ArgoCD, FluxCD, Robot Framework, Selenium, Zsh, GitHub Codespaces"
-		},
-		{
-			"section": "Other:",
-			"details": "AWS, GCP, Firebase, Vercel, DigitalOcean, Cloud66, Github Actions, CircleCI, CloudFlare"
+			"details": "Git, GitHub Actions, CircleCI, PostgreSQL, Redis, Elasticsearch, Sentry, Kibana, Metabase, Unleash, Vim, tmux, Zellij, Zsh"
 		}
 	],
 	"workExperiences": [
@@ -108,9 +128,12 @@
 			"url": "https://eventpop.me",
 			"years": ["2023", "Current"],
 			"details": [
-				"Developed ticket resale platform for EventPop within 1 month",
-				"Upgraded ticketing system with Dual-boot methodology with zero downtime",
-				"Introduced Consumer Driven Contract Testing to the development team using Pact"
+				"Led multi-year modernization of a 10-year-old Rails monolith — Rails 4→6.1 and Ruby 2.7→3.2 — with a dual-boot methodology (parallel CI lane, incremental weekly branches, ALB canary traffic shifting on ECS) at zero downtime, and authored the reusable internal upgrade runbook",
+				"Introduced AI-assisted engineering across the org: brought in Claude Code, wrote the internal adoption guide, helped plan an internal agent tool integration layer for the Rails platform, authored repo-level agent skills, and shipped agent automations — daily LLM-generated release notes written in non-technical Thai for business teams, plus scheduled PR health-check, auto-merge, stale-PR and reviewer-leaderboard agents over ~150 PRs/month",
+				"Owned the payments platform: Stripe integration alongside Omise, an installment/Payment Plan product (authored design & pricing specs), 10+ payment methods (AMEX, Alipay, WeChat Pay, PromptPay, ShopeePay, TrueMoney, K PLUS, card installments), plus reconciliation, dispute, VAT and Thai e-tax (INET) correctness controls",
+				"Built and launched EventPop's ticket resale marketplace end-to-end in 1 month (Rails, OAuth SSO with the main platform, Omise recipients & payouts, Wise international payouts) and ran it in production; also shipped LINE LIFF in-app ticket purchasing, Ticket Upgrade (PRD authored), add-on tickets, and seating/floorplan tooling",
+				"Drove platform anti-abuse & ticket fairness: rate-limit throttling, hCaptcha on signup/checkout/seating, honeypot bot detection, Cloudflare bot rules, place-order audit logging and observe-only order risk scoring",
+				"Owned release engineering & developer experience: hardened production deploy tooling with commit review, stale-merge detection and a staging smoke-test gate; built EDK, the team's reproducible VM dev environment for 3 services; ran PR review, page-speed and dependency-hygiene routines; delivered internal training sessions and 5+ engineering runbooks"
 			]
 		},
 		{
@@ -193,7 +216,7 @@
 		}
 	],
 	"interests": [
-		"Areas : Coding, Productivity & Life-hacks, Mechanical Keyboards",
+		"Areas : Coding, AI & Agentic Engineering, Productivity & Life-hacks, Mechanical Keyboards",
 		"Typing : 120+ words per minute (Colemak Mod-DH layout)"
 	],
 	"resumeUrl": {
