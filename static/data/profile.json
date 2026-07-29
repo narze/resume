@@ -86,19 +86,23 @@
 	"technologies": [
 		{
 			"section": "Languages:",
-			"details": "Ruby, JavaScript, Node.js (strong). TypeScript, SQL (proficient)."
+			"details": "Ruby, JavaScript, TypeScript, Node.js (strong). SQL (proficient)."
 		},
 		{
 			"section": "Frameworks:",
-			"details": "Ruby on Rails, ReactJS, NextJS, NestJS, SvelteJS, TailwindCSS, Bootstrap"
+			"details": "Ruby on Rails, Sidekiq, ReactJS, NextJS, NestJS, SvelteJS, Inertia, Stimulus, Vite, TailwindCSS"
 		},
 		{
 			"section": "Tools:",
-			"details": "Git, Terraform, Docker, Kubernetes, Helm, ArgoCD, FluxCD, Robot Framework, Selenium, Zsh, GitHub Codespaces"
+			"details": "Git, Docker, Kubernetes, Terraform, ArgoCD, FluxCD, Github Actions, RSpec, Playwright, Pact, Unleash"
+		},
+		{
+			"section": "AI / Agentic:",
+			"details": "Claude Code (skills, subagents, scheduled routines), MCP servers, Cursor, agent-driven CI"
 		},
 		{
 			"section": "Other:",
-			"details": "AWS, GCP, Firebase, Vercel, DigitalOcean, Cloud66, Github Actions, CircleCI, CloudFlare"
+			"details": "AWS (ECS, S3), Cloudflare Workers, GCP, Fly.io, DigitalOcean, Vercel, Postgres, Redis, Elasticsearch, Sentry"
 		}
 	],
 	"workExperiences": [
@@ -108,9 +112,13 @@
 			"url": "https://eventpop.me",
 			"years": ["2023", "Current"],
 			"details": [
-				"Developed ticket resale platform for EventPop within 1 month",
-				"Upgraded ticketing system with Dual-boot methodology with zero downtime",
-				"Introduced Consumer Driven Contract Testing to the development team using Pact"
+				"Led Rails 4 to 6.1 & Ruby 2.7 to 3.2 upgrades of a decade-old monolith with zero downtime using Dual-boot",
+				"Built EventPop's ticket resale marketplace from empty repo to production within 1 month (Rails, Omise, Wise)",
+				"Owned payments : Stripe as 2nd gateway, 6 local payment methods, installment plans, refunds & reconciliation",
+				"Cut every-page JS bundle by 48%, CI tasks from 425 to ~80, organizer dashboards from 10-30s timeouts to sub-2s",
+				"Built anti-bot defenses for high-demand on-sales : checkout audit logs, order risk scoring, hCaptcha gating",
+				"Authored 20+ ADRs, introduced Pact contract testing, reviewed 1,400+ PRs, removed 20k+ lines of dead code",
+				"Built the team's agentic dev platform : Claude Code skills, MCP server, parallel worktrees, preview envs"
 			]
 		},
 		{
