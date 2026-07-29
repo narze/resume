@@ -18,7 +18,7 @@
 			<div class="flex-1 text-right">{years.join('-')}</div>
 		</div>
 		<ul class="text-left list-disc pl-8 print:pl-6">
-			{#each details as detail}
+			{#each details as detail (detail)}
 				<Hideable>
 					<li>
 						{detail}
@@ -30,6 +30,8 @@
 </div>
 
 <style lang="postcss">
+	@reference "tailwindcss";
+
 	.work-experience {
 		@apply my-4;
 	}
