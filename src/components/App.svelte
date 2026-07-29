@@ -59,8 +59,10 @@
 				{#each technologies as tech (tech)}
 					<Hideable>
 						<li>
-							<span class="w-28 inline-block">{tech.section}</span>
-							<span>{tech.details}</span>
+							<div class="flex">
+								<span class="w-28 flex-none">{tech.section}</span>
+								<span class="flex-1">{tech.details}</span>
+							</div>
 						</li>
 					</Hideable>
 				{/each}

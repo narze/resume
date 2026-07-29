@@ -12,7 +12,7 @@
 	<Hideable>
 		<div class="flex font-bold mb-2 print:mb-1">
 			<div class="flex-1 text-left">{position}</div>
-			<div class="flex-0">
+			<div class="flex-initial">
 				<a href={url} target="_blank" rel="noreferrer">{company}</a>
 			</div>
 			<div class="flex-1 text-right">{years.join('-')}</div>
