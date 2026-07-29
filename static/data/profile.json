@@ -134,7 +134,8 @@
 				"Cut every-page JS bundle by 48%, CI tasks from 425 to ~80, organizer dashboards from 10-30s timeouts to sub-2s",
 				"Built anti-bot defenses for high-demand on-sales : checkout audit logs, order risk scoring, hCaptcha gating, rate limiting, honeypots, Cloudflare bot rules",
 				"Built the team's agentic dev platform : Claude Code skills, MCP server, parallel worktrees, preview envs — wrote the org adoption guide, plus Thai release-note & PR health-check agents over ~150 PRs/month",
-				"Owned release engineering & DX : hardened deploy tooling (commit review, staging smoke-test gate), EDK reproducible VM dev environment for 3 services"
+				"Owned release engineering & DX : hardened deploy tooling (commit review, staging smoke-test gate), EDK reproducible VM dev environment for 3 services",
+				"Bridged eng & business teams : Thai release comms for non-technical staff, production escalation triage with Support/CS, postmortems, and self-service tooling (Support API/MCP, Venue Setup Wizard) that cut their dev dependency"
 			]
 		},
 		{
