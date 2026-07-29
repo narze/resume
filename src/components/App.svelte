@@ -48,7 +48,7 @@
 	<a href={dataLink} target="_blank" rel="noopener">[Data]</a>
 </header>
 
-<main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
+<main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-7xl">
 	<Intro {...intro} />
 
 	<section>
@@ -56,11 +56,13 @@
 			<h2 class="text-2xl print:text-4xl uppercase text-left">Technologies and Languages</h2>
 			<hr />
 			<ul class="text-left list-disc pl-8">
-				{#each technologies as tech}
+				{#each technologies as tech (tech)}
 					<Hideable>
 						<li>
-							<span class="w-28 inline-block">{tech.section}</span>
-							<span>{tech.details}</span>
+							<div class="flex">
+								<span class="w-28 flex-none">{tech.section}</span>
+								<span class="flex-1">{tech.details}</span>
+							</div>
 						</li>
 					</Hideable>
 				{/each}
@@ -74,7 +76,7 @@
 			<hr />
 
 			<ul class="text-left list-disc pl-8">
-				{#each educations as edu}
+				{#each educations as edu (edu)}
 					<Hideable>
 						<li>
 							<strong>{edu.head}</strong>, {edu.details}
@@ -90,7 +92,7 @@
 			<h2 class="text-2xl print:text-4xl uppercase text-left">Work Experience</h2>
 			<hr />
 
-			{#each workExperiences as exp}
+			{#each workExperiences as exp (exp)}
 				<Work {...exp} />
 			{/each}
 		</Hideable>
@@ -102,7 +104,7 @@
 			<hr />
 
 			<ul class="text-left list-disc pl-8">
-				{#each projects as project}
+				{#each projects as project (project)}
 					<Hideable hide={project.hide}>
 						<li>
 							<strong>{project.name}</strong>
@@ -123,7 +125,7 @@
 			<hr />
 
 			<ul class="text-left list-disc pl-8">
-				{#each interests as interest}
+				{#each interests as interest (interest)}
 					<Hideable>
 						<li>
 							{interest}
@@ -141,6 +143,8 @@
 </main>
 
 <style lang="postcss">
+	@reference "tailwindcss";
+
 	main {
 		overflow-x: hidden;
 	}

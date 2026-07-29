@@ -1,0 +1,8 @@
+{
+	"outputDirectory": "build",
+	"build": {
+		"env": {
+			"ENABLE_EXPERIMENTAL_COREPACK": "1"
+		}
+	}
+}
