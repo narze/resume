@@ -8,7 +8,9 @@
 
 	let profile: IProfileResp;
 
-	$: dataLink = `${sourceLink}/blob/main/static/data/profile.json`;
+	// sourceLink is empty until the profile loads; keep dataLink empty too so it
+	// never becomes a bogus relative URL.
+	$: dataLink = sourceLink ? `${sourceLink}/blob/main/static/data/profile.json` : '';
 	$: ({
 		intro = {} as IProfileResp['intro'],
 		projects = [],
