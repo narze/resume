@@ -128,12 +128,13 @@
 			"url": "https://eventpop.me",
 			"years": ["2023", "Current"],
 			"details": [
-				"Led multi-year modernization of a 10-year-old Rails monolith — Rails 4→6.1 and Ruby 2.7→3.2 — with a dual-boot methodology (parallel CI lane, incremental weekly branches, ALB canary traffic shifting on ECS) at zero downtime, and authored the reusable internal upgrade runbook",
-				"Introduced AI-assisted engineering across the org: brought in Claude Code, wrote the internal adoption guide, helped plan an internal agent tool integration layer for the Rails platform, authored repo-level agent skills, and shipped agent automations — daily LLM-generated release notes written in non-technical Thai for business teams, plus scheduled PR health-check, auto-merge, stale-PR and reviewer-leaderboard agents over ~150 PRs/month",
-				"Owned the payments platform: Stripe integration alongside Omise, an installment/Payment Plan product (authored design & pricing specs), 10+ payment methods (AMEX, Alipay, WeChat Pay, PromptPay, ShopeePay, TrueMoney, K PLUS, card installments), plus reconciliation, dispute, VAT and Thai e-tax (INET) correctness controls",
-				"Built and launched EventPop's ticket resale marketplace end-to-end in 1 month (Rails, OAuth SSO with the main platform, Omise recipients & payouts, Wise international payouts) and ran it in production; also shipped LINE LIFF in-app ticket purchasing, Ticket Upgrade (PRD authored), add-on tickets, and seating/floorplan tooling",
-				"Drove platform anti-abuse & ticket fairness: rate-limit throttling, hCaptcha on signup/checkout/seating, honeypot bot detection, Cloudflare bot rules, place-order audit logging and observe-only order risk scoring",
-				"Owned release engineering & developer experience: hardened production deploy tooling with commit review, stale-merge detection and a staging smoke-test gate; built EDK, the team's reproducible VM dev environment for 3 services; ran PR review, page-speed and dependency-hygiene routines; delivered internal training sessions and 5+ engineering runbooks"
+				"Led Rails 4→6.1 & Ruby 2.7→3.2 upgrades of a decade-old monolith at zero downtime using Dual-boot (parallel CI lane, ALB canary on ECS), and authored the internal upgrade runbook",
+				"Built EventPop's ticket resale marketplace from empty repo to production within 1 month (Rails, OAuth SSO, Omise payouts, Wise); also shipped LINE LIFF purchasing, Ticket Upgrade & seating tooling",
+				"Owned payments : Stripe as 2nd gateway alongside Omise, 10+ payment methods, installment plans, refunds, reconciliation, disputes, VAT & Thai e-tax",
+				"Cut every-page JS bundle by 48%, CI tasks from 425 to ~80, organizer dashboards from 10-30s timeouts to sub-2s",
+				"Built anti-bot defenses for high-demand on-sales : checkout audit logs, order risk scoring, hCaptcha gating, rate limiting, honeypots, Cloudflare bot rules",
+				"Built the team's agentic dev platform : Claude Code skills, MCP server, parallel worktrees, preview envs — wrote the org adoption guide, plus Thai release-note & PR health-check agents over ~150 PRs/month",
+				"Owned release engineering & DX : hardened deploy tooling (commit review, staging smoke-test gate), EDK reproducible VM dev environment for 3 services"
 			]
 		},
 		{
