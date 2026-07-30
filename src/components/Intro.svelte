@@ -31,8 +31,14 @@
 		<p>{location}</p>
 	</div>
 
+	<!--
+		The name must stay shrinkable (no `flex-none`) so it can never push the
+		contact columns onto their own row, and it scales fluidly from lg upward so
+		it still fits on one line on landscape tablets (~1024–1280px) where the
+		columns leave it roughly 500–770px.
+	-->
 	<h2
-		class="flex-none basis-full sm:basis-auto order-first sm:order-none print:order-none text-3xl sm:text-2xl md:text-3xl lg:text-6xl text-center px-0 py-2 sm:p-4 print:pt-0 break-words"
+		class="basis-full sm:basis-auto order-first sm:order-none print:order-none min-w-0 text-3xl sm:text-2xl md:text-3xl lg:text-[clamp(2.25rem,_5.86vw_-_15px,_3.75rem)] text-center px-0 py-2 sm:p-4 print:pt-0 break-words"
 	>
 		{name}
 		<span class="block -mt-1 text-base lg:text-lg">({nickname})</span>
