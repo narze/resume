@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	export let name: string;
+	let { name }: { name: string } = $props();
 
 	let kofiReady = false;
 	let mounted = false;
@@ -38,10 +38,10 @@
 	<script
 		type="text/javascript"
 		src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"
-		on:load={kofiLoaded}
+		onload={kofiLoaded}
 	></script>
 </svelte:head>
 
 {#if name}
-	<div id="kofiContainer" class="web-only" />
+	<div id="kofiContainer" class="web-only"></div>
 {/if}

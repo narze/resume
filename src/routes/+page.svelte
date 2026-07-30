@@ -2,11 +2,11 @@
 	import App from '../components/App.svelte';
 	import type { PageData } from './$types';
 
-	export let data: PageData;
+	let { data }: { data: PageData } = $props();
 
-	$: intro = data.profile.intro;
-	$: pageTitle = intro.title ? `${intro.name} — ${intro.title}` : intro.name;
-	$: description = intro.summary ?? `Résumé of ${intro.name}`;
+	const intro = $derived(data.profile.intro);
+	const pageTitle = $derived(intro.title ? `${intro.name} — ${intro.title}` : intro.name);
+	const description = $derived(intro.summary ?? `Résumé of ${intro.name}`);
 </script>
 
 <svelte:head>
