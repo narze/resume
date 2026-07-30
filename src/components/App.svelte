@@ -46,7 +46,7 @@
 
 	<section>
 		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Technologies and Languages</h2>
+			<h2 class="text-2xl uppercase text-left">Technologies and Languages</h2>
 			<hr />
 			<ul class="text-left list-disc pl-8">
 				{#each technologies as tech (tech)}
@@ -65,7 +65,7 @@
 
 	<section>
 		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Education</h2>
+			<h2 class="text-2xl uppercase text-left">Education</h2>
 			<hr />
 
 			<ul class="text-left list-disc pl-8">
@@ -82,7 +82,7 @@
 
 	<section>
 		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Work Experience</h2>
+			<h2 class="text-2xl uppercase text-left">Work Experience</h2>
 			<hr />
 
 			{#each workExperiences as exp (exp)}
@@ -93,7 +93,7 @@
 
 	<section>
 		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Projects</h2>
+			<h2 class="text-2xl uppercase text-left">Projects</h2>
 			<hr />
 
 			<ul class="text-left list-disc pl-8">
@@ -114,7 +114,7 @@
 
 	<section>
 		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Interests</h2>
+			<h2 class="text-2xl uppercase text-left">Interests</h2>
 			<hr />
 
 			<ul class="text-left list-disc pl-8">
@@ -180,12 +180,22 @@
 			@apply pl-6;
 		}
 
+		li {
+			break-inside: avoid;
+		}
+
 		section {
 			@apply my-2;
 		}
 
+		section h2 {
+			@apply text-sm;
+			break-after: avoid;
+		}
+
 		section hr {
 			@apply mt-0 mb-1;
+			break-after: avoid;
 		}
 
 		main {
