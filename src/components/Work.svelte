@@ -18,14 +18,18 @@
 
 <div class="work-experience">
 	<Hideable>
-		<div class="work-header flex gap-4 font-bold mb-2 print:mb-1">
+		<div
+			class="work-header flex flex-col sm:flex-row print:flex-row sm:gap-4 print:gap-4 font-bold mb-2 print:mb-1"
+		>
 			<div class="flex-1 text-left print:whitespace-nowrap">{position}</div>
-			<div class="flex-initial">
-				<a href={url} target="_blank" rel="noreferrer">{company}</a>
+			<div class="flex justify-between gap-2 sm:contents print:contents">
+				<div class="flex-initial text-left">
+					<a href={url} target="_blank" rel="noreferrer">{company}</a>
+				</div>
+				<div class="flex-none sm:flex-1 text-right print:whitespace-nowrap">{years.join('-')}</div>
 			</div>
-			<div class="flex-1 text-right print:whitespace-nowrap">{years.join('-')}</div>
 		</div>
-		<ul class="text-left list-disc pl-8 print:pl-6">
+		<ul class="text-left list-disc pl-5 sm:pl-8 print:pl-6">
 			{#each details as detail (detail)}
 				<Hideable>
 					<li>

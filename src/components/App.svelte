@@ -27,33 +27,41 @@
 	<Kofi name={intro.github} />
 {/if}
 
-<header class="web-only text-center p-4 sm:p-6 bg-green-400 text-white w-screen">
-	<h1 class="text-4xl">Resumette</h1>
-	<h3>
-		<button onclick={() => window.print()} class="underline text-lg">[Print]</button>
-	</h3>
-	<p>
+<header class="web-only text-center px-4 py-3 sm:p-6 bg-green-400 text-white w-full">
+	<h1 class="text-2xl sm:text-4xl">Resumette</h1>
+
+	<div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-1 mt-1">
+		<button onclick={() => window.print()} class="underline text-base sm:text-lg py-1"
+			>[Print]</button
+		>
+		<a href={sourceLink} target="_blank" rel="noopener" class="py-1">[Source]</a>
+		<a href={dataLink} target="_blank" rel="noopener" class="py-1">[Data]</a>
+	</div>
+
+	<p class="text-xs sm:text-base mt-1 sm:mt-2">
 		Printer-friendly standard résumé, any HTML tags with <code>web-only</code> CSS class will be hidden
 		on print.
 	</p>
-	<p>You can click at any sections or lines hide some information before printing.</p>
-	<a href={sourceLink} target="_blank" rel="noopener">[Source]</a>
-	<a href={dataLink} target="_blank" rel="noopener">[Data]</a>
+	<p class="text-xs sm:text-base">
+		You can click at any sections or lines hide some information before printing.
+	</p>
 </header>
 
-<main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-7xl">
+<main class="text-center px-3 py-4 m-0 sm:p-4 md:m-8 xl:mx-auto max-w-7xl">
 	<Intro {...intro} />
 
 	<section>
 		<Hideable>
-			<h2 class="text-2xl uppercase text-left">Technologies and Languages</h2>
+			<h2 class="text-xl sm:text-2xl uppercase text-left">Technologies and Languages</h2>
 			<hr />
-			<ul class="text-left list-disc pl-8">
+			<ul class="text-left list-disc pl-5 sm:pl-8 print:pl-6 break-words">
 				{#each technologies as tech (tech)}
 					<Hideable>
 						<li>
-							<div class="flex">
-								<span class="w-28 flex-none">{tech.section}</span>
+							<div class="flex flex-col sm:flex-row print:flex-row">
+								<span class="sm:w-28 flex-none font-semibold sm:font-normal print:font-normal"
+									>{tech.section}</span
+								>
 								<span class="flex-1">{tech.details}</span>
 							</div>
 						</li>
@@ -65,10 +73,10 @@
 
 	<section>
 		<Hideable>
-			<h2 class="text-2xl uppercase text-left">Education</h2>
+			<h2 class="text-xl sm:text-2xl uppercase text-left">Education</h2>
 			<hr />
 
-			<ul class="text-left list-disc pl-8">
+			<ul class="text-left list-disc pl-5 sm:pl-8 print:pl-6 break-words">
 				{#each educations as edu (edu)}
 					<Hideable>
 						<li>
@@ -82,7 +90,7 @@
 
 	<section>
 		<Hideable>
-			<h2 class="text-2xl uppercase text-left">Work Experience</h2>
+			<h2 class="text-xl sm:text-2xl uppercase text-left">Work Experience</h2>
 			<hr />
 
 			{#each workExperiences as exp (exp)}
@@ -93,10 +101,10 @@
 
 	<section>
 		<Hideable>
-			<h2 class="text-2xl uppercase text-left">Projects</h2>
+			<h2 class="text-xl sm:text-2xl uppercase text-left">Projects</h2>
 			<hr />
 
-			<ul class="text-left list-disc pl-8">
+			<ul class="text-left list-disc pl-5 sm:pl-8 print:pl-6 break-words">
 				{#each projects as project (project)}
 					<Hideable hide={project.hide}>
 						<li>
@@ -114,10 +122,10 @@
 
 	<section>
 		<Hideable>
-			<h2 class="text-2xl uppercase text-left">Interests</h2>
+			<h2 class="text-xl sm:text-2xl uppercase text-left">Interests</h2>
 			<hr />
 
-			<ul class="text-left list-disc pl-8">
+			<ul class="text-left list-disc pl-5 sm:pl-8 print:pl-6 break-words">
 				{#each interests as interest (interest)}
 					<Hideable>
 						<li>

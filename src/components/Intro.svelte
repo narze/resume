@@ -24,24 +24,26 @@
 	} = $props();
 </script>
 
-<div class="flex flex-wrap flex-col sm:flex-row print:flex-row text-sm sm:text-base">
-	<div class="flex-1 text-left sm:py-4 w-48">
+<div class="flex flex-wrap flex-row gap-x-4 text-sm sm:text-base">
+	<div class="flex-1 basis-[45%] sm:basis-0 text-left sm:py-4 sm:w-48 break-words">
 		<p><a href={`tel:${phone}`}>{phone}</a></p>
 		<p><a href={`mailto:${email}`}>{email}</a></p>
 		<p>{location}</p>
 	</div>
 
 	<h2
-		class="flex-none order-first sm:order-none print:order-none text-4xl sm:text-2xl md:text-3xl lg:text-6xl text-center p-4 print:pt-0"
+		class="flex-none basis-full sm:basis-auto order-first sm:order-none print:order-none text-3xl sm:text-2xl md:text-3xl lg:text-6xl text-center px-0 py-2 sm:p-4 print:pt-0 break-words"
 	>
 		{name}
 		<span class="block -mt-1 text-base lg:text-lg">({nickname})</span>
 		{#if title}
-			<span class="block mt-1 text-lg lg:text-xl font-semibold">{title}</span>
+			<span class="block mt-1 text-base sm:text-lg lg:text-xl font-semibold">{title}</span>
 		{/if}
 	</h2>
 
-	<div class="flex-1 text-left sm:text-right print:text-right sm:py-4 w-48 text-sm sm:text-base">
+	<div
+		class="flex-1 basis-[45%] sm:basis-0 text-right sm:py-4 sm:w-48 text-sm sm:text-base break-words print:text-right"
+	>
 		<p>
 			<a href={`https://github.com/${github}`} target="_blank" rel="noreferrer"
 				>github.com/{github}</a
