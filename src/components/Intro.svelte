@@ -1,14 +1,27 @@
 <script lang="ts">
-	export let name: string = 'Foo';
-	export let nickname: string = '';
-	export let title: string = '';
-	export let summary: string = '';
-	export let phone: string = '';
-	export let email: string = '';
-	export let github: string = '';
-	export let linkedin: string = '';
-	export let location: string = '';
-	export let website: string = '';
+	let {
+		name = 'Foo',
+		nickname = '',
+		title = '',
+		summary = '',
+		phone = '',
+		email = '',
+		github = '',
+		linkedin = '',
+		location = '',
+		website = ''
+	}: {
+		name?: string;
+		nickname?: string;
+		title?: string;
+		summary?: string;
+		phone?: string;
+		email?: string;
+		github?: string;
+		linkedin?: string;
+		location?: string;
+		website?: string;
+	} = $props();
 </script>
 
 <div class="flex flex-wrap flex-col sm:flex-row print:flex-row text-sm sm:text-base">

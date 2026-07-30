@@ -1,11 +1,19 @@
 <script lang="ts">
 	import Hideable from './Hideable.svelte';
 
-	export let position: string = '';
-	export let company: string = '';
-	export let url: string = '';
-	export let years: string[] = [];
-	export let details: string[] = [];
+	let {
+		position = '',
+		company = '',
+		url = '',
+		years = [],
+		details = []
+	}: {
+		position?: string;
+		company?: string;
+		url?: string;
+		years?: string[];
+		details?: string[];
+	} = $props();
 </script>
 
 <div class="work-experience">
