@@ -1,12 +1,11 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import type { IProfileResp } from '../types';
 	import Hideable from './Hideable.svelte';
 	import Intro from './Intro.svelte';
 	import Kofi from './Kofi.svelte';
 	import Work from './Work.svelte';
 
-	let profile: IProfileResp;
+	export let profile: IProfileResp;
 
 	// sourceLink is empty until the profile loads; keep dataLink empty too so it
 	// never becomes a bogus relative URL.
@@ -20,13 +19,6 @@
 		interests = [],
 		resumeUrl: { sourceLink = '', fullVersionLink = '' } = {}
 	} = profile || {});
-
-	onMount(async () => (profile = await fetchResumeProfile()));
-
-	async function fetchResumeProfile() {
-		const resp = await fetch('/data/profile.json');
-		return await resp.json();
-	}
 </script>
 
 <!-- Remove this is you does not want Kofi widget on your site -->

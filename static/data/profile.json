@@ -2,6 +2,8 @@
 	"intro": {
 		"name": "Manassarn Manoonchai",
 		"nickname": "Noom",
+		"title": "Lead Software Engineer",
+		"summary": "Lead Software Engineer with 15 years across ticketing, payments, and infrastructure. Co-founded EventPop (5M+ tickets sold, 5B+ THB processed), now leading platform upgrades, payments, and agentic developer tooling at EVP Corporation.",
 		"phone": "",
 		"email": "manassarn@gmail.com",
 		"github": "narze",
@@ -23,21 +25,9 @@
 			"hide": false
 		},
 		{
-			"name": "Digital Garden",
-			"details": "My notes & stuff (Second Brain)",
-			"url": "garden.narze.live",
-			"hide": false
-		},
-		{
-			"name": "ChatOS",
-			"details": "Hackable chatbot web application",
-			"url": "chat.narze.live",
-			"hide": true
-		},
-		{
-			"name": "Dotfiles",
-			"details": "macOS dotfiles with setup script for self use, tested on Apple Silicon Macs (Zsh, Zinit, Dotbot, GNU Make, etc.)",
-			"url": "github.com/narze/dotfiles",
+			"name": "Popyut",
+			"details": "Contributed to a popcat.click-style clicking game that went viral — 2M visitors within one week",
+			"url": "github.com/popyut/popyut",
 			"hide": false
 		},
 		{
@@ -57,6 +47,24 @@
 			"details": "Thai language Wordle clone.",
 			"url": "thwordle.narze.live",
 			"hide": false
+		},
+		{
+			"name": "Digital Garden",
+			"details": "My notes & stuff (Second Brain)",
+			"url": "garden.narze.live",
+			"hide": false
+		},
+		{
+			"name": "Dotfiles",
+			"details": "macOS dotfiles with setup script for self use, tested on Apple Silicon Macs (Zsh, Zinit, Dotbot, GNU Make, etc.)",
+			"url": "github.com/narze/dotfiles",
+			"hide": false
+		},
+		{
+			"name": "ChatOS",
+			"details": "Hackable chatbot web application",
+			"url": "chat.narze.live",
+			"hide": true
 		},
 		{
 			"name": "9armbot (Contributor)",
@@ -80,12 +88,6 @@
 			"name": "Baht.js",
 			"details": "Convert number to Thai Baht format, but 10x faster & fully typed.",
 			"url": "npmjs.com/package/baht",
-			"hide": true
-		},
-		{
-			"name": "Popyut",
-			"details": "Contributed to a clone of popcat.click meme clicking game, gone viral and got 2M visitors within one week",
-			"url": "github.com/popyut/popyut",
 			"hide": true
 		},
 		{
@@ -128,14 +130,15 @@
 			"url": "https://eventpop.me",
 			"years": ["2023", "Current"],
 			"details": [
-				"Led Rails 4→6.1 & Ruby 2.7→3.2 upgrades of a decade-old monolith at zero downtime using Dual-boot (parallel CI lane, ALB canary on ECS), and authored the internal upgrade runbook",
-				"Built EventPop's ticket resale marketplace from empty repo to production within 1 month (Rails, OAuth SSO, Omise payouts, Wise); also shipped LINE LIFF purchasing, Ticket Upgrade & seating tooling",
-				"Owned payments : Stripe as 2nd gateway alongside Omise, 10+ payment methods, installment plans, refunds, reconciliation, disputes, VAT & Thai e-tax",
-				"Cut every-page JS bundle by 48%, CI tasks from 425 to ~80, organizer dashboards from 10-30s timeouts to sub-2s",
-				"Built anti-bot defenses for high-demand on-sales : checkout audit logs, order risk scoring, hCaptcha gating, rate limiting, honeypots, Cloudflare bot rules",
-				"Built the team's agentic dev platform : Claude Code skills, MCP server, parallel worktrees, preview envs — wrote the org adoption guide, plus Thai release-note & PR health-check agents over ~150 PRs/month",
-				"Owned release engineering & DX : hardened deploy tooling (commit review, staging smoke-test gate), EDK reproducible VM dev environment for 3 services",
-				"Bridged eng & business teams : Thai release comms for non-technical staff, production escalation triage with Support/CS, postmortems, and self-service tooling (Support API/MCP, Venue Setup Wizard) that cut their dev dependency"
+				"Led zero-downtime Rails 4→6.1 & Ruby 2.7→3.2 upgrades of a decade-old monolith using dual-boot (parallel CI lane, ALB canary on ECS), and authored the internal upgrade runbook",
+				"Built EventPop's ticket resale marketplace from empty repo to production within 1 month (Rails, OAuth SSO, Omise payouts, Wise)",
+				"Shipped LINE LIFF in-chat ticket purchasing, Ticket Upgrade, and reserved-seating tooling",
+				"Owned payments: added Stripe as 2nd gateway alongside Omise — 10+ payment methods, installment plans, refunds, reconciliation, disputes, VAT & Thai e-tax",
+				"Cut every-page JS bundle by 48%, CI tasks from 425 to ~80, and organizer dashboards from 10-30s timeouts to sub-2s",
+				"Built anti-bot defenses for high-demand on-sales: checkout audit logs, order risk scoring, hCaptcha gating, rate limiting, honeypots, Cloudflare bot rules",
+				"Built the team's agentic dev platform (Claude Code skills, MCP server, parallel worktrees, preview envs), wrote the org adoption guide, and ran Thai release-note & PR health-check agents over ~150 PRs/month",
+				"Owned release engineering & DX: hardened deploy tooling (commit review, staging smoke-test gate) and built EDK, a reproducible VM dev environment for 3 services",
+				"Bridged engineering & business teams: Thai release comms, production escalation triage, postmortems, and self-service tooling (Support API/MCP, Venue Setup Wizard) that cut Support's dev dependency"
 			]
 		},
 		{
@@ -145,10 +148,8 @@
 			"years": ["2021", "2023"],
 			"details": [
 				"Containerized, developed, and maintained Opn.Store infrastructure on EKS across multiple environments using Terraform, Docker, Kubernetes, and Helm",
-				"Designed architecture using Microservices Pattern & Domain-Driven Design on Sales Promotion feature for Opn.Store",
-				"Helped, and collaborated with software engineering team on coding with good practices and lowering technical debt",
-				"Researched & introduced modern web technologies to the team, such as SvelteJS, TailwindCSS, Vite, etc.",
-				"Designed, bootstrapped, and developed 4 E-commerce related services for Opn.Store"
+				"Designed the Sales Promotion architecture with microservices & domain-driven design, and bootstrapped 4 e-commerce services for Opn.Store",
+				"Introduced modern web technologies to the team (SvelteJS, TailwindCSS, Vite) and drove technical-debt reduction through code reviews & pairing"
 			]
 		},
 		{
@@ -157,12 +158,10 @@
 			"url": "https://eventpop.me",
 			"years": ["2015", "2021"],
 			"details": [
-				"Designed, developed and maintained several core services for EventPop website (Ticketing, Seating, Payment, Fee Calculation, Line Item, Billing, Reporting, APIs, etc.) using Ruby on Rails, sold 2M+ tickets within 6 years",
-				"Researched & applied improvements for development workflow. Testing libraries : RSpec, Guard, VCR, Capybara, Selenium, Cucumber, Timecop. CI/CD : CircleCI, Github Actions, Drone CI, ArgoCD, FluxCD, Terraform",
-				"Maintained server operations, deployments, containerization with Docker & Kubernetes, CI/CD. Also pioneered DevOps practices in the team keeping daily release & deployment possible.",
-				"Integrated 3rd-party services : Kerry Express, DHL, Queue-It, Refund Protect, Skootar, Tanita Body Scale",
-				"Integrated payment service providers : Omise, ThaiEPay, 123 by 2C2P, SCB-Easy, K-PayPlus, K-PaymentGateway. Processed more than 1 billion THB",
-				"Helped interview more than 50 software engineers, gave insights & feedbacks on technical aspects of candidates, designed tech-related questions & on-site coding challenges"
+				"Designed and built core services — ticketing, seating, payments, fee calculation, billing, reporting, public APIs — in Ruby on Rails; sold 2M+ tickets in 6 years",
+				"Integrated payment providers (Omise, ThaiEPay, 123 by 2C2P, SCB-Easy, K-PayPlus, K-PaymentGateway) processing 1B+ THB, plus 3rd-party services (Kerry Express, DHL, Queue-It, Refund Protect, Skootar)",
+				"Pioneered DevOps practices — Docker, Kubernetes, CI/CD (CircleCI, GitHub Actions, Drone CI, ArgoCD, FluxCD, Terraform) — keeping daily releases possible",
+				"Interviewed 50+ software engineers and designed technical interview questions & on-site coding challenges"
 			]
 		},
 		{
@@ -171,12 +170,9 @@
 			"url": "https://fb.me/makerzoo",
 			"years": ["2014", "2016"],
 			"details": [
-				"Pioneered Maker Movement in Thailand by opening first of the Makerspaces in Bangkok & Thailand",
-				"Hosted maker workshops eg. 3D-modeling, 3D-printing, Arduino, IoT, etc. Having more than 100 participants combined.",
-				"Developed hardware-related products for 3-5 clients and startups",
-				"Developed smart door lock system for Hubba, first co-working space in Bangkok",
-				"Provided 3D-printing service & consultant to more than 50 clients",
-				"Hosted 10+ chapters of tutorial videos on Intel Galileo development board, for Intel Thailand"
+				"Co-founded one of the first makerspaces in Bangkok, pioneering the Maker Movement in Thailand",
+				"Hosted 3D-modeling, 3D-printing, Arduino & IoT workshops with 100+ participants, and made 10+ Intel Galileo tutorial video chapters for Intel Thailand",
+				"Built hardware products for clients & startups — including the smart door-lock system for Hubba, Bangkok's first co-working space — and served 50+ 3D-printing clients"
 			]
 		},
 		{
@@ -185,8 +181,7 @@
 			"url": "https://washbox24.com",
 			"years": ["2015", "2016"],
 			"details": [
-				"Developed internet connected Smart Lockers System using web technologies (Node.js, React.js) on embedded systems (Ubuntu Linux, Arduino, Raspberry Pi)",
-				"Developed private Node.js library to connect with Nayax via serial port to receive cashless payment on vending machines, and also supported Thai Baht cash payment"
+				"Built an internet-connected smart-locker system with Node.js & React on embedded Linux, Arduino, and Raspberry Pi, including Nayax cashless-payment integration for vending machines"
 			]
 		},
 		{
@@ -195,9 +190,7 @@
 			"url": "https://www.facebook.com/figabyte",
 			"years": ["2011", "2014"],
 			"details": [
-				"Developed more than 20 Facebook web apps with CodeIgniter, using Facebook API",
-				"Developed web platform using Ruby on Rails 3 & 4",
-				"Made iOS apps for several clients using PhoneGap and RubyMotion"
+				"Built 20+ Facebook web apps (CodeIgniter, Facebook API), web platforms on Ruby on Rails 3 & 4, and hybrid iOS apps (PhoneGap, RubyMotion)"
 			]
 		},
 		{
@@ -206,23 +199,22 @@
 			"url": "https://wongnai.com",
 			"years": ["2010"],
 			"details": [
-				"Developed a small part of website using Java with Spring MVC Framework built with Apache Maven",
-				"Learned TDD practice & making early-stage startup"
+				"Built part of wongnai.com with Java & Spring MVC; first exposure to TDD and early-stage startup culture"
 			]
 		}
 	],
 	"educations": [
 		{
 			"head": "B.Eng. Computer Engineering",
-			"details": "Chulalongkorn University, TH. 2007-2010 (GPA 3.40)"
+			"details": "Chulalongkorn University, TH. 2007-2010"
 		}
 	],
 	"interests": [
-		"Areas : Coding, AI & Agentic Engineering, Productivity & Life-hacks, Mechanical Keyboards",
-		"Typing : 120+ words per minute (Colemak Mod-DH layout)"
+		"Areas: Coding, AI & Agentic Engineering, Productivity & Life-hacks, Mechanical Keyboards",
+		"Typing: 120+ words per minute (Colemak Mod-DH layout)"
 	],
 	"resumeUrl": {
 		"sourceLink": "https://github.com/narze/resume",
-		"fullVersion": "https://resume.narze.live"
+		"fullVersionLink": "https://resume.narze.live"
 	}
 }

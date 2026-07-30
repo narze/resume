@@ -13,6 +13,8 @@ export interface IProfileResp {
 export interface IIntro {
 	name: string;
 	nickname: string;
+	title?: string;
+	summary?: string;
 	phone: string;
 	email: string;
 	github: string;

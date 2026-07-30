@@ -1,6 +1,8 @@
 <script lang="ts">
 	export let name: string = 'Foo';
 	export let nickname: string = '';
+	export let title: string = '';
+	export let summary: string = '';
 	export let phone: string = '';
 	export let email: string = '';
 	export let github: string = '';
@@ -21,6 +23,9 @@
 	>
 		{name}
 		<span class="block -mt-1 text-base lg:text-lg">({nickname})</span>
+		{#if title}
+			<span class="block mt-1 text-lg lg:text-xl font-semibold">{title}</span>
+		{/if}
 	</h2>
 
 	<div class="flex-1 text-left sm:text-right print:text-right sm:py-4 w-48 text-sm sm:text-base">
@@ -37,6 +42,10 @@
 		</p>
 	</div>
 </div>
+
+{#if summary}
+	<p class="text-left text-sm sm:text-base print:text-sm mb-2">{summary}</p>
+{/if}
 
 <style lang="postcss">
 	a {
