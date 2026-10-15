@@ -152,10 +152,7 @@
 			"position": "Lead Software Engineer",
 			"company": "EVP Corporation (formerly EventPop)",
 			"url": "https://eventpop.me",
-			"years": [
-				"2023",
-				"Current"
-			],
+			"years": ["2023", "Current"],
 			"details": [
 				"Led zero-downtime Rails 4→6.1 & Ruby 2.7→3.2 upgrades of a decade-old monolith using dual-boot (parallel CI lane, ALB canary on ECS), published precompiled Ruby builds for the team, and authored the internal upgrade runbook",
 				"Built EventPop's ticket resale marketplace from empty repo to production within 1 month (Rails, OAuth SSO, Omise payouts, Wise), and shipped LINE LIFF in-chat purchasing, Ticket Upgrade, and reserved-seating tooling",
@@ -171,10 +168,7 @@
 			"position": "Senior Infrastructure Software Engineer",
 			"company": "OPN TH (formerly Omise)",
 			"url": "https://opn.ooo/",
-			"years": [
-				"2021",
-				"2023"
-			],
+			"years": ["2021", "2023"],
 			"details": [
 				"Containerized, developed, and maintained Opn.Store infrastructure on EKS across multiple environments using Terraform, Docker, Kubernetes, and Helm",
 				"Designed the Sales Promotion architecture with microservices & domain-driven design, and bootstrapped 4 e-commerce services for Opn.Store",
@@ -185,10 +179,7 @@
 			"position": "Full-stack Developer, Co-founder",
 			"company": "EventPop (acquired by OPN TH in 2021, divested in 2023)",
 			"url": "https://eventpop.me",
-			"years": [
-				"2015",
-				"2021"
-			],
+			"years": ["2015", "2021"],
 			"details": [
 				"Designed and built core services (ticketing, seating, payments, fee calculation, billing, reporting, public APIs) in Ruby on Rails; sold 2M+ tickets in 6 years",
 				"Integrated payment providers (Omise, ThaiEPay, 123 by 2C2P, SCB-Easy, K-PayPlus, K-PaymentGateway) processing 1B+ THB, plus 3rd-party services (Kerry Express, DHL, Queue-It, Refund Protect, Skootar)",
@@ -200,10 +191,7 @@
 			"position": "Maker, Co-founder",
 			"company": "Maker Zoo",
 			"url": "https://fb.me/makerzoo",
-			"years": [
-				"2014",
-				"2016"
-			],
+			"years": ["2014", "2016"],
 			"details": [
 				"Co-founded one of the first makerspaces in Bangkok; hosted 3D-printing, Arduino & IoT workshops (100+ participants) and Intel Galileo tutorials for Intel Thailand",
 				"Built hardware for clients & startups, including the smart door-lock system for Hubba (Bangkok's first co-working space), and served 50+ 3D-printing clients"
@@ -213,10 +201,7 @@
 			"position": "Web / IoT Developer",
 			"company": "Earlier roles: Box24 (contract), Figabyte, Wongnai Media",
 			"url": "",
-			"years": [
-				"2010",
-				"2016"
-			],
+			"years": ["2010", "2016"],
 			"details": [
 				"Smart-locker system with Nayax cashless vending (Node.js, React, embedded Linux) at Box24; 20+ Facebook apps, Rails platforms & hybrid iOS apps at Figabyte; part of wongnai.com (Java, Spring MVC)"
 			]
